@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "version": "1.0.0-test",
+  "steam_build": 26006400,
+  "mods": [
+    {
+      "id": "toggle-run",
+      "version": "1.0.0",
+      "repository": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-toggle-run",
+      "download": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-toggle-run/releases/tag/v1.0.0"
+    },
+    {
+      "id": "local-area-view",
+      "version": "0.1.9-test",
+      "repository": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-local-area-view",
+      "download": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-local-area-view/releases/tag/v0.1.9-test"
+    },
+    {
+      "id": "character-highlight",
+      "version": "0.2.1",
+      "repository": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-character-highlight",
+      "download": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-character-highlight/releases/tag/v0.2.1"
+    },
+    {
+      "id": "particle-reduction",
+      "version": "0.1.0-test",
+      "repository": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-particle-reduction",
+      "download": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-particle-reduction/releases/tag/v0.1.0-test"
+    },
+    {
+      "id": "world-step",
+      "version": "0.1.3-test",
+      "repository": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-world-step",
+      "download": "https://github.com/linyanzhi591-afk/order-of-the-sinking-star-world-step/releases/tag/v0.1.3-test"
+    }
+  ]
+}

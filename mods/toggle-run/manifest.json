@@ -1,0 +1,11 @@
+{
+  "build_id": 26006400,
+  "original_sha256": "0ae10a513dae25286fe93d0db4fa8a2df9a473bc07e1734e12bc1ad30166db1c",
+  "patched_sha256": "bda4419d1f7e7a79f9aaa3e069ae32fe3e19a827afd8bfb3e21cbab534c60505",
+  "file_offset": 635888,
+  "rva": 638960,
+  "size": 56,
+  "original_bytes": "48833d10e8ac0001742d0fb605f7e1ac008815f1e1ac00c605f3e1ac000084d2741584c07511c705dce1ac0000000000c605d9e1ac0001c3",
+  "patched_bytes": "48833d10e8ac0001742984d274258035f3e1ac00010fb605ece1ac008805eee1ac00c605e8e1ac0000c705d9e1ac0000000000c390909090",
+  "changed_byte_count": 45
+}

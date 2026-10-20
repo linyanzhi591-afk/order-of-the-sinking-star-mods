@@ -1,0 +1,74 @@
+{
+  "name": "六职业彩色描边",
+  "version": "0.2.1",
+  "steam_build": "26006400",
+  "files": {
+    "data/materials.package": {
+      "original_sha256": "dffd12a4f1002dc2f309d5b85205b432c1d7213764c798ccb693cd0ef5f1afc6",
+      "patched_sha256": "6ec74fbc74051ee4a4b241a2edba79322398102959ad63493d00fef1c34fa54b"
+    },
+    "data/mesh_outlines.mesh_outlines": {
+      "original_sha256": "363fd47bb37fd9b98e77c8c7f81a1215285ca14964b197c1dc264896f1a38107",
+      "patched_sha256": "31d1cf232020a751c1f62251791a80ced9a5f0a9053accb529922936adffc4d0"
+    }
+  },
+  "colors": {
+    "warrior": [
+      "战士",
+      "#B31616",
+      [
+        "warrior"
+      ]
+    ],
+    "thief": [
+      "盗贼",
+      "#16B32D",
+      [
+        "thief",
+        "thief_alt"
+      ]
+    ],
+    "wizard": [
+      "法师",
+      "#2243B3",
+      [
+        "wizard",
+        "wizard_alt"
+      ]
+    ],
+    "cleric": [
+      "牧师",
+      "#B3B316",
+      [
+        "cleric",
+        "cleric_alt"
+      ]
+    ],
+    "bard": [
+      "吟游诗人",
+      "#862DB3",
+      [
+        "bard"
+      ]
+    ],
+    "druid": [
+      "德鲁伊",
+      "#546B6F",
+      [
+        "druid"
+      ]
+    ]
+  },
+  "outline_width": 5,
+  "visual_validation": "未进行实机画面验收",
+  "compatible_mods": [
+    "toggle-run",
+    "local-area-view-v0.1.9",
+    "known-existing-grid-installations"
+  ],
+  "default_key": "P",
+  "key_config": "toggle_config.json",
+  "native_hook_rva": "0x3ca94c",
+  "native_payload_sha256": "8c0ff416704cac90b055a26a83d506370a3d3a8c6548265ed0fa37fc95833a3e",
+  "grid_payload_sha256": "1097bd0cd3ad749c7eebdae71727bc3c126ee9cf6475448ef3edbd69cc6257b5"
+}

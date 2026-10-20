@@ -1,0 +1,58 @@
+{
+  "version": "0.1.9-test",
+  "build_id": 26006400,
+  "validation": "windows-image-loader-native-callback-equivalence-machine-code-and-installation; game-visual-validation-pending",
+  "original_sha256": "0ae10a513dae25286fe93d0db4fa8a2df9a473bc07e1734e12bc1ad30166db1c",
+  "toggle_run_sha256": "bda4419d1f7e7a79f9aaa3e069ae32fe3e19a827afd8bfb3e21cbab534c60505",
+  "local_only_sha256": "d52ed111a966c78b106ee85825eb8a94cdbcd158c5cde2387bc27ce03d9c8697",
+  "combined_sha256": "49840668932e74f8549cd47fa0d70bbed2cb61e4cf03ff86aeca4926d104503f",
+  "payload_sha256": "d45eba9edd894df84e573b59f5ed228b8186f03086503daf2bef76e9f81e64c4",
+  "legacy_payload_sha256": "d18571355195603fd8280faaf859fab6dc963b088159bcfdd975864c5ab44328",
+  "patches": [
+    {
+      "rva": "0x23a820",
+      "file_offset": "0x239c20",
+      "original_bytes": "415741564154",
+      "patched_bytes": "e9db17f00090"
+    },
+    {
+      "rva": "0x25d7c0",
+      "file_offset": "0x25cbc0",
+      "original_bytes": "415741564155",
+      "patched_bytes": "e96ce8ed0090"
+    },
+    {
+      "rva": "0x276b66",
+      "file_offset": "0x275f66",
+      "original_bytes": "4c8b742478",
+      "patched_bytes": "e94755ec00"
+    }
+  ],
+  "sections": [
+    {
+      "name": ".lvcode",
+      "rva": "0x113c000",
+      "virtual_size": 8192,
+      "raw_size": 2560,
+      "file_offset": 12327936
+    },
+    {
+      "name": ".lvdata",
+      "rva": "0x113e000",
+      "virtual_size": 4096,
+      "raw_size": 512,
+      "file_offset": 12330496
+    },
+    {
+      "name": ".lvconst",
+      "rva": "0x113f000",
+      "virtual_size": 80,
+      "raw_size": 512,
+      "file_offset": 12331008
+    }
+  ],
+  "legacy_v5_payload_sha256": "11c7e51852c5f0f5698818adf506c193b3a2f217c2f6e53fc1b07516022a793e",
+  "legacy_v6_payload_sha256": "eeedba26a73bfdbba12f62f62568dcef6909a87dcc46af4b7729f5e08b2fa76b",
+  "legacy_v7_payload_sha256": "5fd129f0aaf29b498ecf925e2bd69eb359677fecdf0b976b7aea9acd0db3977f",
+  "legacy_v8_payload_sha256": "b82a5216b1df9f594d05d5a19f29ae066ffe4130672f6358d22713a565ee0f61"
+}

@@ -1,0 +1,14 @@
+.bundle-state/
+__pycache__/
+*.pyc
+*.exe
+*.package
+*.mesh_outlines
+*.zip
+mods/*/original/
+mods/*/backups/
+mods/*/sinking_star.backup-*
+bundle-tests-*/
+bundle-image-*/
+test-results.json
+*.tmp
