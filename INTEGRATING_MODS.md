@@ -9,7 +9,7 @@ This repository is the navigation and bundle entry point for future mods for thi
 3. 优先复用原安装器的纯变换/校验逻辑。先生成所有输出并检查完整哈希，再备份所有将管理的目标，最后统一提交。未知状态、冲突或缺少恢复材料时必须拒绝覆盖。
 4. 只对经过确认的发行文件重新生成 `bundle-files.json`。不要通过重算校验清单来“修复”未知的载荷变化。
 5. 使用合法原版样本的临时副本扩展 `tests/test_bundle.py`：覆盖已支持的起始组合、新 mod 的各种共存状态、重复操作、逐文件失败、中断恢复、损坏备份和未知修改保护。不要测试安装到实际游戏。
-6. 明确旧合集的升级方式。若不能证明保留最初基线的原位升级安全，应要求先用旧合集及其 `.bundle-state` 正常卸载，再安装新版本。现有 1.0.0-test 不提供自动跨版本升级承诺。
+6. 明确旧合集的升级方式。若不能证明保留最初基线的原位升级安全，应要求先用旧合集及其 `.bundle-state` 正常卸载，再安装新版本。现有 1.1.0-test 不提供自动跨版本升级承诺。
 7. 更新中文优先的双语 README、验证记录及发行说明，保留所有尚未完成的实机验收边界。通过 `build_release.py` 生成不含运行状态及游戏文件的 ZIP，再发布新 tag、Release 和校验清单。
 
 1. Verify the standalone mod's source, payloads, validation limits and release version. Vendor only redistributable installers, required modules, payloads and documentation under `mods/<english-kebab-case-name>/`; exclude `.git`, game files, backups and saves.
@@ -17,7 +17,7 @@ This repository is the navigation and bundle entry point for future mods for thi
 3. Prefer the original installer's pure transformation/validation logic. Generate and verify every output, back up all managed targets, then commit them together. Reject unknown states, conflicts and missing recovery material.
 4. Regenerate `bundle-files.json` only after verifying the exact vendored release files. Never hide unexplained payload changes by simply regenerating checksums.
 5. Extend `tests/test_bundle.py` using temporary copies of legitimate pristine samples. Cover supported starting combinations, coexistence, repeated operations, per-file failures, interrupted recovery, damaged backups and unknown modifications. Never install into the real game for these tests.
-6. Define the upgrade path. If an in-place upgrade cannot safely preserve the original baseline, require normal uninstallation with the old bundle and its `.bundle-state` before installing the new version. Version 1.0.0-test does not promise automatic cross-version upgrades.
+6. Define the upgrade path. If an in-place upgrade cannot safely preserve the original baseline, require normal uninstallation with the old bundle and its `.bundle-state` before installing the new version. Version 1.1.0-test does not promise automatic cross-version upgrades.
 7. Update the Chinese-first bilingual README, validation record and release notes, retaining unverified gameplay limits. Use `build_release.py` to produce a ZIP without runtime state or game files, then publish a new tag, Release and checksums.
 
 ## 开发验证 / Developer verification

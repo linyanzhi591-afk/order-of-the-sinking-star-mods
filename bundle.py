@@ -1,4 +1,4 @@
-"""五 mod 合集：先离线生成和完整备份，再以可恢复事务写入。"""
+"""六 mod 合集：先离线生成和完整备份，再以可恢复事务写入。"""
 import argparse
 import ctypes
 import hashlib
@@ -17,9 +17,10 @@ from contextlib import contextmanager
 ROOT = Path(__file__).resolve().parent
 STATE_ROOT = ROOT / '.bundle-state'
 TARGETS = {'exe': 'sinking_star.exe', 'materials': 'data/materials.package',
-           'outlines': 'data/mesh_outlines.mesh_outlines', 'levels': 'data/levels.package'}
-ORDER = ['toggle-run', 'local-area-view', 'character-highlight', 'particle-reduction', 'world-step']
-VERSION = '1.0.0-test'
+           'outlines': 'data/mesh_outlines.mesh_outlines', 'levels': 'data/levels.package',
+           'shaders': 'data/shaders.package'}
+ORDER = ['toggle-run', 'local-area-view', 'character-highlight', 'particle-reduction', 'world-step', 'water-surface-grid']
+VERSION = '1.1.0-test'
 MARGIN = 64 * 1024 * 1024
 
 
@@ -92,6 +93,8 @@ def validate_state(value, game):
         return
     if value.get('schema') != 1 or value.get('game') != str(game) or type(value.get('active')) is not bool:
         raise BundleError('合集记录损坏或路径不符 / Invalid bundle receipt or game path')
+    if value.get('version') != VERSION:
+        raise BundleError('请先用原版本合集卸载或恢复，再将新合集解压到新目录；不跨版本覆盖旧备份 / Uninstall or recover using the old bundle, then extract this version into a new folder')
     valid_id(value['baseline_tx'])
     for mapping in ('initial', 'installed'):
         validate_hashes(value[mapping])
@@ -149,6 +152,10 @@ def load_logic():
     particle = module('_bundle_particle', 'mods/particle-reduction/patch.py')
     world = module('_bundle_world', 'mods/world-step/patch.py')
     return camera, highlight, particle, world
+
+
+def water_logic():
+    return module('_bundle_water', 'mods/water-surface-grid/patch.py')
 
 
 def game_running():
@@ -212,7 +219,14 @@ def toggle_run(original):
 
 def build_plan(current):
     camera, high, particle, world = load_logic()
+    water = water_logic()
     core = current['exe']
+    water_enabled = core.endswith(water.MARKER)
+    shader_base, shaders_enabled = water.shader_base(current['shaders'])
+    if water_enabled != shaders_enabled:
+        raise BundleError('水面程序与着色器状态不一致，拒绝覆盖 / Inconsistent water executable/shaders')
+    if water_enabled:
+        core = water.split_native(core, water.native_payload())
     world_keys = None
     if core.endswith(world.MARKER):
         core, world_keys = world.split(core)
@@ -244,7 +258,7 @@ def build_plan(current):
     if levels_hash not in (particle_manifest['original_sha256'], particle_manifest['patched_sha256']):
         raise BundleError('未知关卡资源版本或修改 / Unknown level package version or modification')
     particle_enabled = levels_hash == particle_manifest['patched_sha256']
-    # 顺序固定：奔跑 → 镜头 → 描边 → 粒子 → 世界单步。
+    # 顺序固定：奔跑 → 镜头 → 描边 → 粒子 → 世界单步 → 水面网格。
     exe = toggle_run(base)
     exe = camera.transform(exe, True)
     output = {key: high.transform(TARGETS[key], originals[key]) for key in originals}
@@ -253,7 +267,9 @@ def build_plan(current):
     output['exe'] = world.apply(exe, (78, 77))
     if world.split(output['exe']) != (exe, (78, 77)):
         raise BundleError('世界单步输出不能精确撤销 / World-step output cannot be reversed exactly')
-    return output, dict(zip(ORDER, [run_enabled, camera_version == 9, highlight_key is not None, particle_enabled, world_keys is not None]))
+    water_output, _ = water.plan(output['exe'], shader_base)
+    output.update(water_output)
+    return output, dict(zip(ORDER, [run_enabled, camera_version == 9, highlight_key is not None, particle_enabled, world_keys is not None, water_enabled]))
 
 
 def validate_image(data):

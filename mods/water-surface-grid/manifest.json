@@ -1,0 +1,17 @@
+{
+  "name": "水面网格显示",
+  "version": "0.1.0",
+  "steam_build": 26006400,
+  "key": "O",
+  "initial_enabled": false,
+  "ground_grid": false,
+  "I_control": false,
+  "user_confirmed_usable_and_compatible": "2026-10-22",
+  "runtime_files_sha256": {
+    "patch.py": "6ce7069b47f159aec5a65e84618198c5e673c5853803863a80fa4be4317a0560",
+    "transaction.py": "77842e3499ba3de0f23c6416c6db65134a642e997b5ae447fc1b27a8422b00e0",
+    "native_payload.json": "fa284eb615895523fcaf0c336d87b8277fdf197febc1f662e8ba12fa5e0457dd",
+    "shader_patch.json": "4452b9af06fdb04d9d7788f03a798624375292db231fb3efee4d045a8f352d40",
+    "manager.py": "a4879f2a22224e7c667274138ef82c6fd06b8fd99f11aba4f8fb657850ae5b3d"
+  }
+}

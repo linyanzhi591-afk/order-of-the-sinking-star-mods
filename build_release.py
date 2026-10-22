@@ -20,6 +20,8 @@ def main():
     report = bundle.read_json(ROOT/'test-results.json')
     if not report.get('passed') or not report.get('fixture_game_files_unchanged') or report.get('actual_game_used'):
         raise SystemExit('必须先通过临时副本测试 / Passing temporary-copy tests are required')
+    if report.get('bundle_sha256') != bundle.file_sha(ROOT/'bundle.py'):
+        raise SystemExit('测试结果不对应当前安装器 / Test results do not match the current installer')
     files = ROOT_FILES + sorted(bundle.read_json(ROOT/'bundle-files.json'))
     for name in files:
         path = ROOT/name

@@ -88,9 +88,11 @@ class BundleTests(unittest.TestCase):
             if particle:
                 current['levels'] = self.levels_final.read_bytes()
             output, states = b.build_plan(current)
-            self.assertEqual(list(states.values()), [run,camera,highlight,particle,False])
+            self.assertEqual(list(states.values()), [run,camera,highlight,particle,False,False])
             self.assertEqual({k:b.sha(v) for k,v in output.items()}, self.expected)
-        for exe in (self.pristine['exe'], b.toggle_run(self.pristine['exe']), self.world.split(self.final['exe'])[0]):
+        water = b.water_logic()
+        final_world = water.split_native(self.final['exe'],water.native_payload())
+        for exe in (self.pristine['exe'], b.toggle_run(self.pristine['exe']), self.world.split(final_world)[0]):
             is_high = exe.endswith(self.high.native_toggle.MARKER)
             for particles in (False, True):
                 current = dict(self.pristine, exe=self.world.apply(exe,(78,77)))
@@ -101,6 +103,9 @@ class BundleTests(unittest.TestCase):
                 output, states = b.build_plan(current)
                 self.assertTrue(states['world-step'])
                 self.assertEqual({k:b.sha(v) for k,v in output.items()}, self.expected)
+        output, states = b.build_plan(dict(self.final,levels=self.levels_final.read_bytes()))
+        self.assertTrue(all(states.values()))
+        self.assertEqual({k:b.sha(v) for k,v in output.items()},self.expected)
 
     def test_02_install_repeat_uninstall(self):
         self.call('check')
@@ -175,7 +180,8 @@ class BundleTests(unittest.TestCase):
                        materials=self.final['materials'],outlines=self.final['outlines'])
         with self.assertRaises(b.BundleError):
             b.build_plan(current)
-        core, _ = self.world.split(self.final['exe'])
+        water = b.water_logic()
+        core, _ = self.world.split(water.split_native(self.final['exe'],water.native_payload()))
         with self.assertRaises(b.BundleError):
             b.build_plan(dict(self.pristine,exe=self.world.apply(core,(117,118))))
         with self.assertRaises(ValueError):
@@ -319,6 +325,30 @@ class BundleTests(unittest.TestCase):
                 self.assertEqual(result.returncode,code,result.stdout+result.stderr)
                 self.assertIn(('ACTION='+action).encode(),result.stdout)
                 self.assertIn(('PATH='+str(self.game)).encode(),result.stdout)
+
+    def test_16_water_unknown_and_old_receipt(self):
+        target = self.game/b.TARGETS['shaders']
+        target.write_bytes(self.pristine['shaders']+b'unknown')
+        before = b.current_hashes(self.game)
+        with self.assertRaises(ValueError):
+            self.call('install')
+        self.assertEqual(b.current_hashes(self.game),before)
+        target.write_bytes(self.pristine['shaders'])
+        self.write_game(dict(exe=self.final['exe']))
+        before = b.current_hashes(self.game)
+        with self.assertRaises(b.BundleError):
+            self.call('install')
+        self.assertEqual(b.current_hashes(self.game),before)
+        self.write_game({'exe':self.pristine['exe']})
+        folder=self.folder(); folder.mkdir(parents=True,exist_ok=True)
+        fake=dict(schema=1,version='1.0.0-test',game=str(self.game.resolve()),active=True,
+                  baseline_tx='0'*32,initial={k:v for k,v in self.original_hashes.items() if k!='shaders'},
+                  installed={k:v for k,v in self.original_hashes.items() if k!='shaders'})
+        b.atomic_json(folder/'state.json',fake)
+        with self.assertRaisesRegex(b.BundleError,'原版本合集'):
+            self.call('install')
+        self.assert_original()
+        self.assertEqual(b.read_json(folder/'state.json'),fake)
 
 
 if __name__ == '__main__':
