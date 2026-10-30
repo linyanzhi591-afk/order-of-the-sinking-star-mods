@@ -12,7 +12,7 @@ import grid_native
 ROOT = Path(__file__).resolve().parent
 GAME = Path(r'D:\Program Files (x86)\Steam\steamapps\common\Order of the Sinking Star')
 FILES = {
-    'data/materials.package': 'dffd12a4f1002dc2f309d5b85205b432c1d7213764c798ccb693cd0ef5f1afc6',
+    'data/materials.package': 'c31d712f7ab747b5846192a4720f1a7a142d09cae4a92dae84c82677d783857c',
     'data/mesh_outlines.mesh_outlines': '363fd47bb37fd9b98e77c8c7f81a1215285ca14964b197c1dc264896f1a38107',
 }
 COLORS = {

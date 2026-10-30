@@ -47,7 +47,7 @@ def schema():
         else:
             fields.append((version, name, offset, kind))
 
-    for name, tp, offset, version in members(base+0x6838c8):
+    for name, tp, offset, version in members(base+0x67fea0):
         if name != 'entity':
             walk(name, tp, offset, version)
     return fields

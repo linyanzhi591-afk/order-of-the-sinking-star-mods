@@ -1,47 +1,38 @@
 # 六 mod 合集发行验证 / Six-mod release validation
 
-版本 **1.1.0-test**；日期 **2026-10-22**。原五个 mod 的发行文件与版本不变；加入水面网格 **0.1.0**，O 键切换、启动默认关闭，不加入未完成的通用网格。
+版本 **1.1.1-test**；日期 **2026-10-30**；目标 **Steam Build 26249670**。
 
-Version **1.1.0-test**; date **2026-10-22**. Original five-mod files and versions are unchanged. Adds Water Surface Grid **0.1.0**, off at startup and toggled with O, without the unfinished general grid.
+Version **1.1.1-test**; date **2026-10-30**; target **Steam Build 26249670**.
 
 ## 本版检查 / Checks for this version
 
-完整运行 **16 组测试，全部通过**。使用项目保留的合法样本及候选的私有临时副本；只读样本哈希未变。没有查找、安装到、卸载或控制实际游戏。
+- 新版主程序钩子和全局地址逐函数迁移；奔跑、俯视、描边、世界单步载荷重新编译，无新增导入或运行时重定位。
+- 粒子字段结构保持兼容，按新版 `levels.package` 重新生成 651 项字段修改；563 个环境效果减半、75 个火焰附属效果及 13 个光束附属效果关闭。
+- 32 个目标水面像素程序全部由新版原始着色器重建、签名并通过 `dxv`；16 个地面变体和其余 2800 个条目保持逐字节不变。
+- 水面原生隔离测试通过：默认关闭、仅 O 键、长按/失焦/I 无效、后加载、原生上传包装器、参数边界、重入和未知布局保护。
+- 奔跑、俯视、描边和世界单步的隔离机器码/载荷行为通过；最终组合通过 Windows x64 映像检查。
+- 合集临时副本回归覆盖 16 种四 mod 子组合、完整安装、重复安装、精确卸载、恢复、已有部分状态、失败回滚、损坏备份、并发锁、空间与未知版本保护。
+- 所有测试使用工作区私有副本；没有启动游戏，也没有写入实际游戏目录。
 
-The complete suite of **16 test groups passed**, using private temporary copies of retained legitimate samples and candidates. Read-only fixture hashes remained unchanged. The actual game was not located, installed into, uninstalled or controlled.
+- Executable hooks and globals were migrated function by function. Toggle-run, camera, highlight and world-step payloads were rebuilt without new imports or runtime relocations.
+- Particle field layout remained compatible; 651 field edits were regenerated from the new `levels.package`: 563 ambient effects reduced, 75 flame auxiliaries and 13 beam auxiliaries disabled.
+- All 32 target water pixel shaders were rebuilt from new originals, signed and passed `dxv`; 16 ground variants and all other 2800 entries remain byte-identical.
+- Isolated water-native checks passed startup-off, O-only, hold/focus/I behavior, late loading, the original upload wrapper, bounds, reentrancy and unknown-layout guards.
+- Isolated payload behavior passed for toggle-run, camera, highlight and world-step; the final composition passed Windows x64 image validation.
+- Temporary-copy bundle regression covers all 16 four-mod subsets, installation, repetition, exact removal, recovery, partial starting states, rollback, damaged backups, locking, disk-space and unknown-version guards.
+- All checks used private workspace copies. The game was not launched and the actual game directory was not written.
 
-- 原四项的16种子组合、原世界单步支持的6种组合及完整水面组合均生成相同六mod输出。
-- 完整安装、重复安装保留首次基线、状态/预检、精确和重复卸载、重复恢复、卸载后重装；已有部分或全部mod的基线保留。
-- 游戏运行、查询失败、未知/不一致状态、改键、未完成网格、空间不足、备份写入失败和损坏载荷均拒绝游戏写入。
-- 五个目标全部备份并验证后才开始替换；第二文件写入失败自动回滚；安装/卸载中断后可恢复。
-- 未知中断后修改、损坏恢复或初始备份、并发操作均受保护；预先存在的同名临时文件不被删除。
-- 五个CMD入口的含空格路径与成功/失败退出码通过。
-- 新增 shader 包的未知修改、水面程序/shader 不一致、旧1.0.0-test收据均拒绝，旧记录保持不变。
+## 产物哈希 / Candidate hashes
 
-- All 16 original four-mod subsets, six world-step starting combinations and the complete water state produce identical six-mod outputs.
-- Fresh/repeated installation preserving the first baseline, status/preflight, exact/repeated removal, repeated recovery and reinstallation; pre-existing partial/complete mod baselines are retained.
-- Running game, failed query, unknown/inconsistent state, rebound keys, unfinished grid, insufficient space, backup failure and damaged payload block game writes.
-- All five targets are completely backed up and verified before replacement; second-file failure rolls back; interrupted installation/removal can recover.
-- Unknown post-interruption edits, damaged recovery/initial backups and concurrent operations are guarded; pre-existing scratch files are not deleted.
-- All five CMD launchers passed spaced-path and success/failure exit-code checks.
-- Unknown shader changes, inconsistent water executable/shaders and old 1.0.0-test receipts are rejected without changing old records.
+- 六 mod 主程序：`a2433c02df3d6de2de4d3c152aa3328e778291bb7a2eea2464b7cba3b6884b5e`
+- 水面着色器包：`1b6809717a8c1dd401a7d5cb8bb90b1e1e18bb586da9ca914d1076f4b23b8f16`
 
-## 水面与实机证据 / Water and gameplay evidence
+## 验收边界 / Acceptance boundary
 
-独立水面发行的安装、重复、卸载、失败保护和恢复专项通过。原开发项目的隔离机器码测试重新通过：默认关闭、O-only、长按/失焦/I无效、后加载、原生上传包装器、参数/边界、重入和布局保护；窗口、按键、GPU均为桩。
+上述结果证明补丁构造、可逆性、签名、资源范围和安装事务符合预期。Build 26249670 尚未进行实机启动、画面、输入和完整关卡验收；实机结果未知，保留测试版标记。
 
-Standalone water installation/repetition/removal/failure/recovery checks passed. Original isolated machine-code checks were rerun: startup-off, O-only, hold/focus/I behavior, late loading, upload wrapper, parameters/bounds, reentrancy and layout guards. Window, keyboard and GPU calls were stubs.
+These results establish patch construction, reversibility, signing, resource scope and installer transaction behavior. Build 26249670 has not yet received gameplay startup, visual, input or full-level acceptance; runtime results remain unknown and the test label is retained.
 
-六mod exe SHA-256为 `5d537ef6726847d39df9e786e9e087b3135c0ca18ab9f60690ec5ee567216c29`；shader包为 `641edb243e436548dee1072ac6a0de1556774d4a26af5c2521ee4b579161e820`，与已确认候选逐字节一致。差量不重新编译/签名shader，完整输出一致性保留原32个水面程序的签名及保真结论。
+发行白名单仅含安装器、源码、载荷、差量、文档和校验清单，不含完整游戏程序、资源包、存档、备份、测试样本或 Git 历史。
 
-Executable SHA-256: `5d537ef6726847d39df9e786e9e087b3135c0ca18ab9f60690ec5ee567216c29`; shader package: `641edb243e436548dee1072ac6a0de1556774d4a26af5c2521ee4b579161e820`, byte-identical to the confirmed candidate. Deltas do not recompile/re-sign shaders; exact matching retains the 32 original water programs' validated signatures and fidelity.
-
-用户于 **2026-10-22** 确认水面可用并兼容现有mod。这是用户实机反馈，本次没有重新启动游戏，不扩大为全部关卡、水域或设备验收。原三项mod及合集的test标记保留。
-
-On **2026-10-22**, the user confirmed water usability and compatibility. This is user-reported gameplay evidence; this run did not launch the game or expand it into acceptance of every level, water area or device. The three original test labels and bundle test label remain.
-
-## 分发边界 / Distribution limits
-
-白名单仅含安装器、源码、载荷、差量、文档和校验清单，不含完整exe、资源包、原版资源、存档、本机备份、临时样本或旧Git历史。原五个独立仓库、旧合集tag和Release保留。升级须先用旧合集恢复/卸载，再在新目录安装。
-
-Allowlist packaging includes installers, source, payloads, deltas, documentation and checksums; no complete executable/package, original assets, saves, local backups, temporary fixtures or old Git history. The original five repositories and old bundle tags/Releases remain. Recover/remove with the old bundle before installing in a new folder.
+The release allowlist includes only installers, source, payloads, deltas, documentation and checksums. It excludes complete game executables/packages, saves, backups, test fixtures and Git history.

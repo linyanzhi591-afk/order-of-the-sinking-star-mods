@@ -1,22 +1,22 @@
 # 沉星之序 mod 导航与一键安装合集 / Order of the Sinking Star Mods
 
 > 因作者目前仍然在打一阶段，目前只确保能在一阶段可使用。
-> 该 mod 可能会因游戏更新而失效（26/10/22 可用）。
+> 该版本已适配 Steam Build 26249670；后续游戏更新仍可能导致失效。
 > mod 均由 AI 生成。
 >
 > The author is currently still playing Stage 1; usability is only assured for Stage 1 at present.
-> Game updates may break these mods (working as of 2026-10-22).
+> This release targets Steam Build 26249670; later game updates may break it.
 > All mods are AI-generated.
 
 中文为默认说明语言；各节附有英文。 / Chinese is the default; English accompanies each section.
 
 ## 说明 / Description
 
-这是六个独立 mod 的总导航和统一安装入口，适用于 **Windows x64 / Steam Build 26006400**。合集版本 **1.1.0-test**。下载一个 ZIP、完整解压后运行根目录 `install.cmd`，即可安装全部六项；包含独立水面网格显示，仍不包含尚未完成的通用网格显示 mod。
+这是六个独立 mod 的总导航和统一安装入口，适用于 **Windows x64 / Steam Build 26249670**。合集版本 **1.1.1-test**。下载一个 ZIP、完整解压后运行根目录 `install.cmd`，即可安装全部六项；包含独立水面网格显示，仍不包含尚未完成的通用网格显示 mod。
 
-This repository is the navigation hub and unified installer for six standalone mods targeting **Windows x64 / Steam Build 26006400**. Bundle version: **1.1.0-test**. Download one ZIP, extract it completely and run the root `install.cmd` to install all six. The standalone water grid is included; the unfinished general grid-display mod remains excluded.
+This repository is the navigation hub and unified installer for six standalone mods targeting **Windows x64 / Steam Build 26249670**. Bundle version: **1.1.1-test**. Download one ZIP, extract it completely and run the root `install.cmd` to install all six. The standalone water grid is included; the unfinished general grid-display mod remains excluded.
 
-**[下载合集 ZIP / Download bundle ZIP](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-mods/releases/download/v1.1.0-test/order-of-the-sinking-star-mods-v1.1.0-test-build26006400.zip)** · **[Release 与 SHA-256 校验清单 / Release and checksums](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-mods/releases/tag/v1.1.0-test)**
+发行 ZIP 将命名为 `order-of-the-sinking-star-mods-v1.1.1-test-build26249670.zip`；发布前可用随附的 SHA-256 清单核对。
 
 | mod / Mod | 功能 / Function | 版本 / Version | 默认按键 / Default controls | 独立仓库 / Repository | 独立下载 / Download |
 | --- | --- | --- | --- | --- | --- |
@@ -63,9 +63,9 @@ A fresh full installation needs approximately 1.1 GB for backups/staging and ano
 
 ### 从旧合集升级 / Upgrading from the old bundle
 
-从 **1.0.0-test** 升级时，先在旧合集目录退出游戏并完成 `recover.cmd`（若有中断）和 `uninstall.cmd`，再将 **1.1.0-test** 解压到新目录安装。不要覆盖旧目录或将旧 `.bundle-state` 混入新版；新版管理新增的第五个目标 `data/shaders.package`，会拒绝旧收据。没有旧合集收据但已单独安装原五项时，新版会保留它们并添加水面层。
+从旧合集升级时，先在旧合集目录退出游戏并完成 `recover.cmd`（若有中断）和 `uninstall.cmd`，再将 **1.1.1-test** 解压到新目录安装。不要覆盖旧目录或将旧 `.bundle-state` 混入新版；新版会拒绝旧收据。
 
-When upgrading from **1.0.0-test**, first exit the game and finish recovery (if needed) and uninstallation in the old bundle folder. Extract **1.1.0-test** into a new folder. Do not overwrite the old folder or mix its `.bundle-state` into this version; the new fifth target, `data/shaders.package`, requires new receipts and old ones are rejected. Existing standalone five-mod installations without an old bundle receipt are preserved as the starting baseline while water is added.
+When upgrading from an older bundle, first exit the game and finish recovery (if needed) and uninstallation in the old bundle folder. Extract **1.1.1-test** into a new folder. Do not overwrite the old folder or mix its `.bundle-state` into this version; old receipts are rejected.
 
 ## 使用 / Usage
 
@@ -126,21 +126,21 @@ Move the hidden state directory together with the bundle. Without this installat
 
 ## 兼容性与已存在的 mod / Compatibility and existing mods
 
-- 只接受完整哈希验证通过的 Build 26006400。支持原版、当前奔跑/俯视/描边/粒子四项的全部 16 种子组合，以及世界单步原安装器已支持的三种基础程序与两种粒子状态，共 6 种含世界单步组合，以及当前独立水面层的完整组合。
+- 只接受完整哈希验证通过的 Build 26249670。支持原版、当前奔跑/俯视/描边/粒子四项的全部 16 种子组合，以及已验证的世界单步和水面层组合。
 - 俯视须为 0.1.9-test；描边和世界单步须使用当前已发布版本及默认 P/N/M。更旧版本、部分损坏安装、未知资源修改和未完成的通用网格层会在写入前被拒绝。
 - 备份的是实际读到的完整初始状态。独立描边已安装时，安装器仅对严格匹配的当前资源执行可逆重建，并核对原版哈希和正向回放结果，无需附带原版资源。
 - 操作前和逐文件替换前均检查游戏进程，查询失败则停止。不会自动启动、关闭或控制游戏。操作期间请保持游戏关闭。
 
-- Only exact, verified Build 26006400 files are accepted. Supported inputs include the pristine game, all 16 subsets of the current toggle-run/camera/highlight/particle mods, and six world-step combinations covering its three supported executable bases and two particle states, plus the current complete water-layer combination.
+- Only exact, verified Build 26249670 files are accepted. Supported inputs include the pristine game, all 16 subsets of the current toggle-run/camera/highlight/particle mods, plus the verified world-step and water-layer combinations.
 - Camera must be 0.1.9-test; highlight and world-step must be the current released versions with default P/N/M keys. Older versions, inconsistent installations, unknown resource edits and unfinished general-grid layers are rejected before writes.
 - The complete actual starting state is backed up. Already installed highlight resources are reversed only when they strictly match the current known output, and both original hashes and forward replay are checked; no original assets need to be distributed.
 - The game process is checked before the operation and before each replacement. A failed process query stops writes. The installer never starts, stops or controls the game. Keep the game closed throughout the operation.
 
 ## 验证边界 / Validation limits
 
-水面网格 0.1.0 已由用户于 2026-10-22 确认可用并与其他 mod 兼容；本次只验证发行及整合，没有重新实机验收。
+Build 26249670 的水面网格已重新编译、签名并通过离线 DXIL 与隔离机器码验证；尚未进行新版实机画面验收。
 
-Water Surface Grid 0.1.0 was confirmed usable and compatible by the user on 2026-10-22. This run validates distribution and integration without a new gameplay session.
+The Build 26249670 water grid was rebuilt, signed and passed offline DXIL and isolated machine-code checks; gameplay visuals on the new build have not yet been accepted.
 
 合集及三个 mod 保留 `test` 标记。隔离安装与恢复测试不能代替全关卡实机验收；第一阶段以外、特殊交互、实体手柄、实际画面及性能收益均不能由这些测试保证。世界暂停不保证冻结音乐、界面动画、纯渲染效果或独立真实时间计时器；低帧率会降低连步速度。
 

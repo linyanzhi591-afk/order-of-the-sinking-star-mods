@@ -9,6 +9,7 @@ import bundle
 ROOT = Path(__file__).resolve().parent
 ROOT_FILES = ['.gitignore','.gitattributes','README.md','INTEGRATING_MODS.md','VALIDATION.md',
               'RELEASE_NOTES.md','bundle.py','bundle.json','bundle-files.json','build_release.py',
+              'build_water.py',
               'install.cmd','uninstall.cmd','recover.cmd','status.cmd','check.cmd','tests/test_bundle.py']
 
 
@@ -37,7 +38,8 @@ def main():
     checksums = ''.join(f'{hashlib.sha256((ROOT/name).read_bytes()).hexdigest()}  {name}\n' for name in files)
     (ROOT/'SHA256SUMS.txt').write_text(checksums,encoding='ascii',newline='\n')
     args.output.mkdir(parents=True,exist_ok=True)
-    name = f'order-of-the-sinking-star-mods-v{bundle.VERSION}-build26006400.zip'
+    steam_build = bundle.read_json(ROOT/'bundle.json')['steam_build']
+    name = f'order-of-the-sinking-star-mods-v{bundle.VERSION}-build{steam_build}.zip'
     archive = args.output/name
     sum_path = args.output/f'order-of-the-sinking-star-mods-v{bundle.VERSION}-SHA256SUMS.txt'
     if archive.exists() or sum_path.exists():

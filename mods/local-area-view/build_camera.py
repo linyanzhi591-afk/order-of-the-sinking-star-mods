@@ -20,14 +20,14 @@ def build():
                             str(ROOT/name), '-o', str(tmp/(name+'.o'))], check=True)
         exe = tmp/'payload.exe'
         subprocess.run([str(BIN/'ld.exe'), '-mi386pep', '--image-base', '0',
-                        '--section-start', '.text=0x113c000',
-                        '--section-start', '.data=0x113e000',
-                        '--section-start', '.rdata=0x113f000',
-                        '--defsym', 'game_state=0xb69600',
-                        '--defsym', 'return_begin=0x25d7c6',
-                        '--defsym', 'return_end=0x276b6b',
-                        '--defsym', 'return_toggle=0x23a826',
-                        '--defsym', 'current_level=0x2e21e0',
+                        '--section-start', '.text=0x113b000',
+                        '--section-start', '.data=0x113d000',
+                        '--section-start', '.rdata=0x113e000',
+                        '--defsym', 'game_state=0xb68618',
+                        '--defsym', 'return_begin=0x25dcc6',
+                        '--defsym', 'return_end=0x2764d1',
+                        '--defsym', 'return_toggle=0x23da86',
+                        '--defsym', 'current_level=0x2e1510',
                         '--entry', 'hook_toggle', '--disable-auto-import',
                         str(tmp/'camera_hooks.S.o'), str(tmp/'camera_view.c.o'),
                         '-o', str(exe)], check=True)

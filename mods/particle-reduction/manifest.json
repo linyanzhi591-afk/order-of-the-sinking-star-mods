@@ -1,12 +1,12 @@
 {
   "version": "0.1.0-test",
-  "build": 26006400,
+  "build": 26249670,
   "file": "data/levels.package",
-  "original_sha256": "408aba3676925faea0c823f8c231e30844feffe9c32ae42644d273ef31863589",
-  "patched_sha256": "52a8a8084fc698b9dab3137c2254548f0ba3c578374a69ad1061885e37a87600",
-  "file_size": 394366064,
+  "original_sha256": "d747e5d9b8f540c9c6b90e8e987bd74a8c7f8f2f0672fce189403128f1f3117c",
+  "patched_sha256": "6c5af3666d3998bf5e42162200f9c7d814d8284f9dca6a1ecf898f8f45871a7c",
+  "file_size": 396566252,
   "environment_factor": 0.5,
-  "parsed_entities": 1211254,
+  "parsed_entities": 1218443,
   "summary": {
     "环境装饰粒子减半": 563,
     "移除火焰附属粒子": 75,
@@ -3402,7 +3402,7 @@
       ],
       "texture": "vfx_spark",
       "reason": "移除火焰附属粒子",
-      "old_pps": 96.0,
+      "old_pps": 387.2099914550781,
       "new_pps": 0.0,
       "fields": [
         "particles_per_second"
@@ -8726,7 +8726,7 @@
   ],
   "patches": [
     {
-      "offset": 1819160,
+      "offset": 1819124,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/3d_intro_vanilla.entities",
@@ -8734,7 +8734,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 1891611,
+      "offset": 1891575,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/3d_intro_vanilla.entities",
@@ -8742,7 +8742,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 2168135,
+      "offset": 2168087,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/3wc_into_forest_v7.entities",
@@ -8750,7 +8750,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 2957416,
+      "offset": 2956627,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/3wcn_shm_dragon_lily.entities",
@@ -8758,7 +8758,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 3116956,
+      "offset": 3116803,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/3wcn_stonehenge.entities",
@@ -8766,7 +8766,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 4318961,
+      "offset": 4318784,
       "before": "01007041",
       "after": "0100f040",
       "entry": "data-common/a_wiz_out_of_water.entities",
@@ -8774,7 +8774,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 4320267,
+      "offset": 4320090,
       "before": "00004041",
       "after": "0000c040",
       "entry": "data-common/a_wiz_out_of_water.entities",
@@ -8782,7 +8782,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 4321551,
+      "offset": 4321374,
       "before": "00004041",
       "after": "0000c040",
       "entry": "data-common/a_wiz_out_of_water.entities",
@@ -8790,7 +8790,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 4322857,
+      "offset": 4322680,
       "before": "00004041",
       "after": "0000c040",
       "entry": "data-common/a_wiz_out_of_water.entities",
@@ -8798,7 +8798,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 5789441,
+      "offset": 5789204,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/aggro_maze.entities",
@@ -8806,7 +8806,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 5790774,
+      "offset": 5790537,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/aggro_maze.entities",
@@ -8814,7 +8814,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 5792247,
+      "offset": 5792010,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/aggro_maze.entities",
@@ -8822,7 +8822,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 5793720,
+      "offset": 5793483,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/aggro_maze.entities",
@@ -8830,7 +8830,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 6006502,
+      "offset": 6006265,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/aggro_which0.entities",
@@ -8838,7 +8838,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 6657527,
+      "offset": 6657266,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/all_out_goblin_war.entities",
@@ -8846,7 +8846,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 6798678,
+      "offset": 6798417,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/all_out_goblin_war.entities",
@@ -8854,7 +8854,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 6800017,
+      "offset": 6799756,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/all_out_goblin_war.entities",
@@ -8862,7 +8862,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 6950075,
+      "offset": 6949814,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/all_out_goblin_war.entities",
@@ -8870,7 +8870,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 7008964,
+      "offset": 7008703,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/all_out_goblin_war.entities",
@@ -8878,7 +8878,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 7339313,
+      "offset": 7339040,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/all_together_now.entities",
@@ -8886,7 +8886,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 7340381,
+      "offset": 7340108,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/all_together_now.entities",
@@ -8894,7 +8894,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 9971751,
+      "offset": 9971478,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/annoying_orange_v3.entities",
@@ -8902,7 +8902,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 11289015,
+      "offset": 11288658,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/army_v5.entities",
@@ -8910,7 +8910,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 11404299,
+      "offset": 11403942,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/army_v5.entities",
@@ -8918,7 +8918,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 11405728,
+      "offset": 11405371,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/army_v5.entities",
@@ -8926,7 +8926,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 11407157,
+      "offset": 11406800,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/army_v5.entities",
@@ -8934,7 +8934,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 11814049,
+      "offset": 11813680,
       "before": "0000803f",
       "after": "0000003f",
       "entry": "data-common/assassins_creed.entities",
@@ -8942,7 +8942,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 11815423,
+      "offset": 11815054,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/assassins_creed.entities",
@@ -8950,7 +8950,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 13247945,
+      "offset": 13247528,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bard_movable_island.entities",
@@ -8958,7 +8958,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 13249229,
+      "offset": 13248812,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bard_movable_island.entities",
@@ -8966,7 +8966,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 13771569,
+      "offset": 13771140,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bard_movable_island2.entities",
@@ -8974,7 +8974,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 13772853,
+      "offset": 13772424,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bard_movable_island2.entities",
@@ -8982,7 +8982,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 13774137,
+      "offset": 13773708,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bard_movable_island2.entities",
@@ -8990,7 +8990,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 15119005,
+      "offset": 15118528,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/bard_stack_intro.entities",
@@ -8998,7 +8998,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 20760743,
+      "offset": 20760128,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/bitstring_small.entities",
@@ -9006,7 +9006,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 20768422,
+      "offset": 20767807,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bitstring_small.entities",
@@ -9014,7 +9014,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 20878104,
+      "offset": 20877477,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/blind_spot_v2.entities",
@@ -9022,7 +9022,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 20904448,
+      "offset": 20903821,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/blind_spot_v2.entities",
@@ -9030,7 +9030,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 20905927,
+      "offset": 20905300,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/blind_spot_v2.entities",
@@ -9038,7 +9038,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 21176818,
+      "offset": 21176179,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/blocking_issue.entities",
@@ -9046,7 +9046,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 21490226,
+      "offset": 21489575,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/blue_revolution_v2.entities",
@@ -9054,7 +9054,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 21830085,
+      "offset": 21829422,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/boat_priest_v3.entities",
@@ -9062,7 +9062,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 21831369,
+      "offset": 21830706,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/boat_priest_v3.entities",
@@ -9070,7 +9070,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 21832968,
+      "offset": 21832305,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/boat_priest_v3.entities",
@@ -9078,7 +9078,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 21834252,
+      "offset": 21833589,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/boat_priest_v3.entities",
@@ -9086,7 +9086,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 22298274,
+      "offset": 22297599,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/bon_voyage.entities",
@@ -9094,7 +9094,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 23959388,
+      "offset": 23958677,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/bottom_adjust.entities",
@@ -9102,7 +9102,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 23960705,
+      "offset": 23959994,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/bottom_adjust.entities",
@@ -9110,7 +9110,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24096067,
+      "offset": 24095356,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_adjust.entities",
@@ -9118,7 +9118,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24142108,
+      "offset": 24141375,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/bottom_adjust.entities",
@@ -9126,7 +9126,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24251523,
+      "offset": 24250790,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9134,7 +9134,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24256661,
+      "offset": 24255928,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9142,7 +9142,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24596035,
+      "offset": 24595302,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9150,7 +9150,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24597356,
+      "offset": 24596623,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9158,7 +9158,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24598677,
+      "offset": 24597944,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9166,7 +9166,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24626724,
+      "offset": 24625991,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9174,7 +9174,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24658868,
+      "offset": 24658135,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9182,7 +9182,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24660308,
+      "offset": 24659575,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9190,7 +9190,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24714428,
+      "offset": 24713695,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9198,7 +9198,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24720898,
+      "offset": 24720165,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9206,7 +9206,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24726135,
+      "offset": 24725402,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_tall.entities",
@@ -9214,7 +9214,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 24757266,
+      "offset": 24756521,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_v2.entities",
@@ -9222,7 +9222,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 25042394,
+      "offset": 25041649,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/bottom_bridge_v2.entities",
@@ -9230,7 +9230,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 25043727,
+      "offset": 25042982,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_v2.entities",
@@ -9238,7 +9238,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 25045167,
+      "offset": 25044422,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_v2.entities",
@@ -9246,7 +9246,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 25046607,
+      "offset": 25045862,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/bottom_bridge_v2.entities",
@@ -9254,7 +9254,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26417640,
+      "offset": 26416847,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/breath_skip.entities",
@@ -9262,7 +9262,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26436938,
+      "offset": 26436145,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/breath_skip.entities",
@@ -9270,7 +9270,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26613616,
+      "offset": 26612811,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/bridgey.entities",
@@ -9278,7 +9278,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26631821,
+      "offset": 26631016,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey.entities",
@@ -9286,7 +9286,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26686651,
+      "offset": 26685846,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey.entities",
@@ -9294,7 +9294,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26687990,
+      "offset": 26687185,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey.entities",
@@ -9302,7 +9302,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26689329,
+      "offset": 26688524,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey.entities",
@@ -9310,7 +9310,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26744596,
+      "offset": 26743779,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey2.entities",
@@ -9318,7 +9318,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26752847,
+      "offset": 26752030,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey2.entities",
@@ -9326,7 +9326,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26887769,
+      "offset": 26886952,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/bridgey2.entities",
@@ -9334,7 +9334,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26954866,
+      "offset": 26954037,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey2b.entities",
@@ -9342,7 +9342,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 26960704,
+      "offset": 26959875,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey2b.entities",
@@ -9350,7 +9350,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 27047289,
+      "offset": 27046460,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/bridgey2b.entities",
@@ -9358,7 +9358,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 27092926,
+      "offset": 27092097,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey3_abstract_art.entities",
@@ -9366,7 +9366,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 27094243,
+      "offset": 27093414,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/bridgey3_abstract_art.entities",
@@ -9374,7 +9374,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 27141881,
+      "offset": 27141052,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/bridgey3_abstract_art.entities",
@@ -9382,7 +9382,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 27146573,
+      "offset": 27145744,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/bridgey3_abstract_art.entities",
@@ -9390,7 +9390,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31240078,
+      "offset": 31286473,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/carry_simplified.entities",
@@ -9398,7 +9398,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31241344,
+      "offset": 31287739,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/carry_simplified.entities",
@@ -9406,7 +9406,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31272352,
+      "offset": 31318747,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/carry_simplified.entities",
@@ -9414,7 +9414,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31273658,
+      "offset": 31320053,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/carry_simplified.entities",
@@ -9422,7 +9422,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31274964,
+      "offset": 31321359,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/carry_simplified.entities",
@@ -9430,7 +9430,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31965973,
+      "offset": 32012320,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/catching_up_v0.entities",
@@ -9438,7 +9438,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 31991506,
+      "offset": 32037853,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/catching_up_v2.entities",
@@ -9446,7 +9446,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 32523761,
+      "offset": 32570096,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/chain_gang3.entities",
@@ -9454,7 +9454,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33284121,
+      "offset": 33330444,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/chasm_3.entities",
@@ -9462,7 +9462,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33338193,
+      "offset": 33384516,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/chasm_3.entities",
@@ -9470,7 +9470,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33404473,
+      "offset": 33450784,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/cleric_fly_intro3_v2.entities",
@@ -9478,7 +9478,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33405935,
+      "offset": 33452246,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/cleric_fly_intro3_v2.entities",
@@ -9486,7 +9486,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33407374,
+      "offset": 33453685,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/cleric_fly_intro3_v2.entities",
@@ -9494,7 +9494,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33697238,
+      "offset": 33743537,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/cleric_isles.entities",
@@ -9502,7 +9502,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33698632,
+      "offset": 33744931,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/cleric_isles.entities",
@@ -9510,7 +9510,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33700026,
+      "offset": 33746325,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/cleric_isles.entities",
@@ -9518,7 +9518,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33896054,
+      "offset": 33942353,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/cleric_isles.entities",
@@ -9526,7 +9526,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33897320,
+      "offset": 33943619,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/cleric_isles.entities",
@@ -9534,7 +9534,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 33915950,
+      "offset": 33962249,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/cleric_isles.entities",
@@ -9542,7 +9542,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 34632950,
+      "offset": 34679189,
       "before": "1a000040",
       "after": "1a00803f",
       "entry": "data-common/clone_goblin.entities",
@@ -9550,7 +9550,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 35063435,
+      "offset": 35109674,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/clone_goblin.entities",
@@ -9558,7 +9558,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 35064684,
+      "offset": 35110923,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/clone_goblin.entities",
@@ -9566,7 +9566,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36498398,
+      "offset": 36544577,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/come_closer.entities",
@@ -9574,7 +9574,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36526117,
+      "offset": 36572296,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/come_closer.entities",
@@ -9582,7 +9582,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36537203,
+      "offset": 36583382,
       "before": "00008042",
       "after": "00000042",
       "entry": "data-common/come_closer.entities",
@@ -9590,7 +9590,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36667924,
+      "offset": 36714103,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/come_closer.entities",
@@ -9598,7 +9598,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36670394,
+      "offset": 36716573,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/come_closer.entities",
@@ -9606,7 +9606,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36672864,
+      "offset": 36719043,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/come_closer.entities",
@@ -9614,7 +9614,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 36676223,
+      "offset": 36722402,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/come_closer.entities",
@@ -9622,7 +9622,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38547132,
+      "offset": 38593263,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/crystal_bridges.entities",
@@ -9630,7 +9630,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38549740,
+      "offset": 38595871,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/crystal_bridges.entities",
@@ -9638,7 +9638,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38738566,
+      "offset": 38784332,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/crystal_island.entities",
@@ -9646,7 +9646,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38795826,
+      "offset": 38841592,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/crystal_island.entities",
@@ -9654,7 +9654,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38797210,
+      "offset": 38842976,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/crystal_island.entities",
@@ -9662,7 +9662,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38798532,
+      "offset": 38844298,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/crystal_island.entities",
@@ -9670,7 +9670,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 38799961,
+      "offset": 38845727,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/crystal_island.entities",
@@ -9678,7 +9678,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 41197132,
+      "offset": 41233382,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/crystals_not_stones.entities",
@@ -9686,7 +9686,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 41198167,
+      "offset": 41234417,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/crystals_not_stones.entities",
@@ -9694,7 +9694,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 41248311,
+      "offset": 41284561,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/crystals_not_stones.entities",
@@ -9702,7 +9702,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 44443790,
+      "offset": 44480582,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/depositor_bard.entities",
@@ -9710,7 +9710,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 44445146,
+      "offset": 44481938,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/depositor_bard.entities",
@@ -9718,7 +9718,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47139606,
+      "offset": 47176338,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/diag_slide.entities",
@@ -9726,7 +9726,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47293242,
+      "offset": 47329962,
       "before": "00002042",
       "after": "0000a041",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9734,7 +9734,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47294443,
+      "offset": 47331163,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9742,7 +9742,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47332843,
+      "offset": 47369563,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9750,7 +9750,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47359472,
+      "offset": 47396192,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9758,7 +9758,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47360256,
+      "offset": 47396976,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9766,7 +9766,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47361040,
+      "offset": 47397760,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9774,7 +9774,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 47361824,
+      "offset": 47398544,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dipping_your_toes_in.entities",
@@ -9782,7 +9782,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 48051639,
+      "offset": 48088335,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/dont_push_the_button.entities",
@@ -9790,7 +9790,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51307547,
+      "offset": 51344147,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/double_up.entities",
@@ -9798,7 +9798,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51984310,
+      "offset": 52020886,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/dragon_compass.entities",
@@ -9806,7 +9806,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51986520,
+      "offset": 52023096,
       "before": "00006040",
       "after": "0000e03f",
       "entry": "data-common/dragon_compass.entities",
@@ -9814,7 +9814,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51987880,
+      "offset": 52024456,
       "before": "00006040",
       "after": "0000e03f",
       "entry": "data-common/dragon_compass.entities",
@@ -9822,7 +9822,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51989262,
+      "offset": 52025838,
       "before": "00006040",
       "after": "0000e03f",
       "entry": "data-common/dragon_compass.entities",
@@ -9830,7 +9830,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51990622,
+      "offset": 52027198,
       "before": "00006040",
       "after": "0000e03f",
       "entry": "data-common/dragon_compass.entities",
@@ -9838,7 +9838,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51992004,
+      "offset": 52028580,
       "before": "00006040",
       "after": "0000e03f",
       "entry": "data-common/dragon_compass.entities",
@@ -9846,7 +9846,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 51993396,
+      "offset": 52029972,
       "before": "00006040",
       "after": "0000e03f",
       "entry": "data-common/dragon_compass.entities",
@@ -9854,7 +9854,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 52963834,
+      "offset": 53000362,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/dragons_layer.entities",
@@ -9862,7 +9862,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 53530488,
+      "offset": 53566992,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/drop_off.entities",
@@ -9870,7 +9870,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 53531772,
+      "offset": 53568276,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/drop_off.entities",
@@ -9878,7 +9878,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 53533067,
+      "offset": 53569571,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/drop_off.entities",
@@ -9886,7 +9886,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 53534679,
+      "offset": 53571183,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/drop_off.entities",
@@ -9894,7 +9894,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 53935619,
+      "offset": 53972111,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/drop_operation_v3.entities",
@@ -9902,7 +9902,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 55709460,
+      "offset": 55744871,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/drowner.entities",
@@ -9910,7 +9910,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 55742483,
+      "offset": 55780163,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/drowner.entities",
@@ -9918,7 +9918,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 55743995,
+      "offset": 55781675,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/drowner.entities",
@@ -9926,7 +9926,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 57637480,
+      "offset": 57675583,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/dunk_tank_alt.entities",
@@ -9934,7 +9934,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 57638879,
+      "offset": 57676982,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/dunk_tank_alt.entities",
@@ -9942,7 +9942,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 57640276,
+      "offset": 57678379,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dunk_tank_alt.entities",
@@ -9950,7 +9950,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 57641651,
+      "offset": 57679754,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/dunk_tank_alt.entities",
@@ -9958,7 +9958,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 57758831,
+      "offset": 57796934,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/dunk_tank_alt.entities",
@@ -9966,7 +9966,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 68205489,
+      "offset": 68258239,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/end2_river_place.entities",
@@ -9974,7 +9974,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 68206843,
+      "offset": 68259593,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/end2_river_place.entities",
@@ -9982,7 +9982,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 68710055,
+      "offset": 68762972,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/end3_denoise_pool.entities",
@@ -9990,7 +9990,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 68808741,
+      "offset": 68861658,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/end3_denoise_pool.entities",
@@ -9998,7 +9998,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70745058,
+      "offset": 70797916,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10006,7 +10006,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70746121,
+      "offset": 70798979,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10014,7 +10014,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70747184,
+      "offset": 70800042,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10022,7 +10022,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70974314,
+      "offset": 71027172,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10030,7 +10030,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70975640,
+      "offset": 71028498,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10038,7 +10038,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70976966,
+      "offset": 71029824,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10046,7 +10046,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70978292,
+      "offset": 71031150,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10054,7 +10054,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 70979618,
+      "offset": 71032476,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10062,7 +10062,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71088034,
+      "offset": 71140892,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10070,7 +10070,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71090566,
+      "offset": 71143424,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10078,7 +10078,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71092584,
+      "offset": 71145442,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10086,7 +10086,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71094602,
+      "offset": 71147460,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10094,7 +10094,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71096885,
+      "offset": 71149743,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/end3_off_topic_alt.entities",
@@ -10102,7 +10102,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71950445,
+      "offset": 72003527,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/end3_off_topic_heroes.entities",
@@ -10110,7 +10110,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71952019,
+      "offset": 72005101,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/end3_off_topic_heroes.entities",
@@ -10118,7 +10118,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71953325,
+      "offset": 72006407,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/end3_off_topic_heroes.entities",
@@ -10126,7 +10126,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 71954631,
+      "offset": 72007713,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/end3_off_topic_heroes.entities",
@@ -10134,7 +10134,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 72491315,
+      "offset": 72544163,
       "before": "34e8a343",
       "after": "34e82343",
       "entry": "data-common/end3_off_topic_mirror.entities",
@@ -10142,7 +10142,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 72977217,
+      "offset": 73030065,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/end3_off_topic_mirror.entities",
@@ -10150,7 +10150,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 78633027,
+      "offset": 78930157,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/end3_reorder_mirror.entities",
@@ -10158,7 +10158,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 81176444,
+      "offset": 81472305,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/endpoint_holder3.entities",
@@ -10166,7 +10166,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 81177791,
+      "offset": 81473652,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/endpoint_holder3.entities",
@@ -10174,7 +10174,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 81499428,
+      "offset": 81797334,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/endpoint_holder4.entities",
@@ -10182,7 +10182,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 81500775,
+      "offset": 81798681,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/endpoint_holder4.entities",
@@ -10190,7 +10190,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 81734537,
+      "offset": 82032443,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/endpoint_holder4.entities",
@@ -10198,7 +10198,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85864517,
+      "offset": 86220294,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/escape_bridge.entities",
@@ -10206,7 +10206,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85894643,
+      "offset": 86250420,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/escape_bridge.entities",
@@ -10214,7 +10214,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85895981,
+      "offset": 86251758,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/escape_bridge.entities",
@@ -10222,7 +10222,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85897341,
+      "offset": 86253118,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/escape_bridge.entities",
@@ -10230,7 +10230,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85898701,
+      "offset": 86254478,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/escape_bridge.entities",
@@ -10238,7 +10238,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85900061,
+      "offset": 86255838,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/escape_bridge.entities",
@@ -10246,7 +10246,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 85901751,
+      "offset": 86257528,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/escape_bridge.entities",
@@ -10254,7 +10254,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 88034885,
+      "offset": 88390662,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/falling_blocker_v3.entities",
@@ -10262,7 +10262,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 88036224,
+      "offset": 88392001,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/falling_blocker_v3.entities",
@@ -10270,7 +10270,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 88257164,
+      "offset": 88612929,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/falling_button.entities",
@@ -10278,7 +10278,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 88259631,
+      "offset": 88615396,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/falling_button.entities",
@@ -10286,7 +10286,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 90498315,
+      "offset": 90854056,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/far_cl_no_walls_pit.entities",
@@ -10294,7 +10294,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 90563981,
+      "offset": 90919722,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/far_cl_no_walls_pit.entities",
@@ -10302,7 +10302,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 92214279,
+      "offset": 92569851,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/fire_from_above_2.entities",
@@ -10310,7 +10310,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 95639792,
+      "offset": 95995821,
       "before": "00007041",
       "after": "0000f040",
       "entry": "data-common/flamethrower.entities",
@@ -10318,7 +10318,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 96012903,
+      "offset": 96369183,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/floating_gardens.entities",
@@ -10326,7 +10326,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 96014295,
+      "offset": 96370575,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/floating_gardens.entities",
@@ -10334,7 +10334,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 96016868,
+      "offset": 96373148,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/floating_gardens.entities",
@@ -10342,7 +10342,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 96149357,
+      "offset": 96505637,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/floating_gardens.entities",
@@ -10350,7 +10350,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 96150652,
+      "offset": 96506932,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/floating_gardens.entities",
@@ -10358,7 +10358,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 96151917,
+      "offset": 96508197,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/floating_gardens.entities",
@@ -10366,7 +10366,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 99909147,
+      "offset": 100266053,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/front_side_bus2.entities",
@@ -10374,7 +10374,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 99910409,
+      "offset": 100267315,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/front_side_bus2.entities",
@@ -10382,7 +10382,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 99911693,
+      "offset": 100268599,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/front_side_bus2.entities",
@@ -10390,7 +10390,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 99912955,
+      "offset": 100269861,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/front_side_bus2.entities",
@@ -10398,7 +10398,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 99914228,
+      "offset": 100271134,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/front_side_bus2.entities",
@@ -10406,7 +10406,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 105778966,
+      "offset": 106135740,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/gem_transport.entities",
@@ -10414,7 +10414,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 105780373,
+      "offset": 106137147,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/gem_transport.entities",
@@ -10422,7 +10422,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 105860179,
+      "offset": 106216953,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/gem_transport_2.entities",
@@ -10430,7 +10430,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 105861432,
+      "offset": 106218206,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/gem_transport_2.entities",
@@ -10438,7 +10438,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 107479707,
+      "offset": 107844234,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/goblin_below_intro_same_z.entities",
@@ -10446,7 +10446,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 107752976,
+      "offset": 108117491,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/goblin_express.entities",
@@ -10454,7 +10454,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 107754253,
+      "offset": 108118768,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/goblin_express.entities",
@@ -10462,7 +10462,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 107755704,
+      "offset": 108120219,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/goblin_express.entities",
@@ -10470,7 +10470,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 108248971,
+      "offset": 108613474,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/goblin_hat_v2.entities",
@@ -10478,7 +10478,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 108250277,
+      "offset": 108614780,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/goblin_hat_v2.entities",
@@ -10486,7 +10486,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 111817917,
+      "offset": 112182372,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/green_revolution.entities",
@@ -10494,7 +10494,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 112542354,
+      "offset": 112906797,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/greenhouse.entities",
@@ -10502,7 +10502,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 112543609,
+      "offset": 112908052,
       "before": "0000c040",
       "after": "00004040",
       "entry": "data-common/greenhouse.entities",
@@ -10510,7 +10510,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 112544828,
+      "offset": 112909271,
       "before": "00007041",
       "after": "0000f040",
       "entry": "data-common/greenhouse.entities",
@@ -10518,7 +10518,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 112600876,
+      "offset": 112965307,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/gully_alt.entities",
@@ -10526,7 +10526,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 118333509,
+      "offset": 118697782,
       "before": "cdcc4c3e",
       "after": "cdcccc3d",
       "entry": "data-common/heroes1_17.entities",
@@ -10534,7 +10534,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 118334938,
+      "offset": 118699211,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/heroes1_17.entities",
@@ -10542,7 +10542,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 118336710,
+      "offset": 118700983,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/heroes1_17.entities",
@@ -10550,7 +10550,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 118347377,
+      "offset": 118711650,
       "before": "cdcc4c3e",
       "after": "cdcccc3d",
       "entry": "data-common/heroes1_17.entities",
@@ -10558,7 +10558,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 118348828,
+      "offset": 118713101,
       "before": "cdcc4c3e",
       "after": "cdcccc3d",
       "entry": "data-common/heroes1_17.entities",
@@ -10566,7 +10566,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 119419403,
+      "offset": 119783652,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/heroes1_19_jail.entities",
@@ -10574,7 +10574,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 119661992,
+      "offset": 120026241,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/heroes1_21_v3.entities",
@@ -10582,7 +10582,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 130999957,
+      "offset": 131363750,
       "before": "00008043",
       "after": "00000043",
       "entry": "data-common/heroes3_4.entities",
@@ -10590,7 +10590,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 131247635,
+      "offset": 131611416,
       "before": "00008043",
       "after": "00000043",
       "entry": "data-common/heroes3_5.entities",
@@ -10598,7 +10598,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 133150302,
+      "offset": 133514035,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/heroes3_8_v4_alt.entities",
@@ -10606,7 +10606,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 135910465,
+      "offset": 136274138,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/hover_corner_3.entities",
@@ -10614,7 +10614,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 136167940,
+      "offset": 136531613,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/hover_corner_4.entities",
@@ -10622,7 +10622,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 136170147,
+      "offset": 136533820,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/hover_corner_4.entities",
@@ -10630,7 +10630,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 136171494,
+      "offset": 136535167,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/hover_corner_4.entities",
@@ -10638,7 +10638,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 139292815,
+      "offset": 139658702,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/implausible_bridge_2.entities",
@@ -10646,7 +10646,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 140807096,
+      "offset": 141172947,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/indirect_skip_2.entities",
@@ -10654,7 +10654,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 140812265,
+      "offset": 141178116,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/indirect_skip_2.entities",
@@ -10662,7 +10662,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 140813049,
+      "offset": 141178900,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/indirect_skip_2.entities",
@@ -10670,7 +10670,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 140952548,
+      "offset": 141317483,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/indirect_skip_3.entities",
@@ -10678,7 +10678,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141150780,
+      "offset": 141515715,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/indirect_skip_3.entities",
@@ -10686,7 +10686,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141845978,
+      "offset": 142210597,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10694,7 +10694,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141847079,
+      "offset": 142211698,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10702,7 +10702,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141847427,
+      "offset": 142212046,
       "before": "0000c041",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10710,7 +10710,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141850289,
+      "offset": 142214908,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10718,7 +10718,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141851409,
+      "offset": 142216028,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10726,7 +10726,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141852620,
+      "offset": 142217239,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10734,7 +10734,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141852990,
+      "offset": 142217609,
       "before": "0000c041",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10742,7 +10742,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141855079,
+      "offset": 142219698,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10750,7 +10750,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141860074,
+      "offset": 142224693,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10758,7 +10758,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141861194,
+      "offset": 142225813,
       "before": "01",
       "after": "00",
       "entry": "data-common/ingame_particles.entities",
@@ -10766,7 +10766,7 @@
       "field": "enable_burst"
     },
     {
-      "offset": 141865086,
+      "offset": 142229705,
       "before": "0bcb7843",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10774,15 +10774,15 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141879738,
-      "before": "0000c042",
+      "offset": 142244377,
+      "before": "e19ac143",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
       "entity_id": 135266308,
       "field": "particles_per_second"
     },
     {
-      "offset": 141881854,
+      "offset": 142246493,
       "before": "00000040",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10790,7 +10790,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141920192,
+      "offset": 142284831,
       "before": "00004843",
       "after": "0000c842",
       "entry": "data-common/ingame_particles.entities",
@@ -10798,7 +10798,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141943382,
+      "offset": 142308021,
       "before": "00000041",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10806,7 +10806,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141949262,
+      "offset": 142313901,
       "before": "fcffef41",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10814,7 +10814,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 141999612,
+      "offset": 142364301,
       "before": "519ac143",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10822,7 +10822,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 142051908,
+      "offset": 142416597,
       "before": "0000fa43",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10830,7 +10830,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 142074128,
+      "offset": 142438817,
       "before": "0000a040",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10838,7 +10838,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 142079716,
+      "offset": 142444405,
       "before": "9a188e43",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10846,7 +10846,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 142082055,
+      "offset": 142446744,
       "before": "00002042",
       "after": "00000000",
       "entry": "data-common/ingame_particles.entities",
@@ -10854,7 +10854,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 142572699,
+      "offset": 142937388,
       "before": "55c36b41",
       "after": "55c3eb40",
       "entry": "data-common/into_the_water_3.entities",
@@ -10862,7 +10862,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 142596885,
+      "offset": 142961574,
       "before": "55c36b41",
       "after": "55c3eb40",
       "entry": "data-common/into_the_water_3.entities",
@@ -10870,7 +10870,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 144677750,
+      "offset": 145042215,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/intro.entities",
@@ -10878,7 +10878,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 146180038,
+      "offset": 146544503,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/intro.entities",
@@ -10886,7 +10886,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 147291062,
+      "offset": 147655524,
       "before": "0000803f",
       "after": "0000003f",
       "entry": "data-common/intro.entities",
@@ -10894,7 +10894,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 148193019,
+      "offset": 148558970,
       "before": "0000c040",
       "after": "00004040",
       "entry": "data-common/island_friends.entities",
@@ -10902,7 +10902,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 148224934,
+      "offset": 148590873,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/island_hopping.entities",
@@ -10910,7 +10910,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 150120500,
+      "offset": 150486391,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/juggle.entities",
@@ -10918,7 +10918,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 150254613,
+      "offset": 150620504,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/juggle.entities",
@@ -10926,7 +10926,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 150433069,
+      "offset": 150798960,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/juggle.entities",
@@ -10934,7 +10934,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 150441220,
+      "offset": 150807111,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/juggle.entities",
@@ -10942,7 +10942,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 151078971,
+      "offset": 151444793,
       "before": "00002042",
       "after": "0000a041",
       "entry": "data-common/killer_wizard.entities",
@@ -10950,7 +10950,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 152234719,
+      "offset": 152600517,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/laser_stop_surprise.entities",
@@ -10958,7 +10958,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 153758465,
+      "offset": 154124557,
       "before": "00004842",
       "after": "0000c841",
       "entry": "data-common/learn_to_catch_v2.entities",
@@ -10966,7 +10966,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 153759793,
+      "offset": 154125885,
       "before": "00004842",
       "after": "0000c841",
       "entry": "data-common/learn_to_catch_v2.entities",
@@ -10974,7 +10974,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 153761132,
+      "offset": 154127224,
       "before": "00004842",
       "after": "0000c841",
       "entry": "data-common/learn_to_catch_v2.entities",
@@ -10982,7 +10982,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 157739284,
+      "offset": 158121733,
       "before": "00004041",
       "after": "0000c040",
       "entry": "data-common/little_faith_alt.entities",
@@ -10990,7 +10990,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 157994893,
+      "offset": 158377330,
       "before": "0000803f",
       "after": "0000003f",
       "entry": "data-common/loading_docks_v2.entities",
@@ -10998,7 +10998,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 157996289,
+      "offset": 158378726,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/loading_docks_v2.entities",
@@ -11006,7 +11006,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 157997645,
+      "offset": 158380082,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/loading_docks_v2.entities",
@@ -11014,7 +11014,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 158475632,
+      "offset": 158858045,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/long_platform_v2.entities",
@@ -11022,7 +11022,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 158476993,
+      "offset": 158859406,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/long_platform_v2.entities",
@@ -11030,7 +11030,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 169385489,
+      "offset": 169849089,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/make_oneway.entities",
@@ -11038,7 +11038,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 171352540,
+      "offset": 171818137,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/mega_clone_v2.entities",
@@ -11046,7 +11046,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 171591408,
+      "offset": 172057005,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/mega_clone_v2.entities",
@@ -11054,7 +11054,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 171869171,
+      "offset": 172334768,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/mega_merge_v5.entities",
@@ -11062,7 +11062,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 171870466,
+      "offset": 172336063,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/mega_merge_v5.entities",
@@ -11070,7 +11070,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 172927645,
+      "offset": 173623323,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/menu_combo_heroes_water_a.entities",
@@ -11078,7 +11078,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 172928922,
+      "offset": 173624600,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/menu_combo_heroes_water_a.entities",
@@ -11086,7 +11086,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 172930351,
+      "offset": 173626029,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/menu_combo_heroes_water_a.entities",
@@ -11094,7 +11094,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 174261907,
+      "offset": 174957549,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/menu_promesst_a.entities",
@@ -11102,7 +11102,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 174628764,
+      "offset": 175324406,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/menu_promesst_a.entities",
@@ -11110,7 +11110,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 175726887,
+      "offset": 176422505,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/menu_sky_goblin_a.entities",
@@ -11118,7 +11118,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 175863699,
+      "offset": 176559317,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/menu_sky_goblin_a.entities",
@@ -11126,7 +11126,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176221123,
+      "offset": 178009075,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/menu_sky_mirror_a.entities",
@@ -11134,7 +11134,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176222462,
+      "offset": 178010414,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/menu_sky_mirror_a.entities",
@@ -11142,7 +11142,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176539786,
+      "offset": 178698913,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/menu_under_beam_computation_a.entities",
@@ -11150,7 +11150,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176541175,
+      "offset": 178700302,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/menu_under_beam_computation_a.entities",
@@ -11158,7 +11158,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176543525,
+      "offset": 178702652,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/menu_under_beam_computation_a.entities",
@@ -11166,7 +11166,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176544914,
+      "offset": 178704041,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/menu_under_beam_computation_a.entities",
@@ -11174,7 +11174,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176771274,
+      "offset": 178930401,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/menu_under_beam_computation_a.entities",
@@ -11182,7 +11182,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 176772642,
+      "offset": 178931769,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/menu_under_beam_computation_a.entities",
@@ -11190,7 +11190,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 178324244,
+      "offset": 180483335,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/menu_under_mirrors_artifacts_a.entities",
@@ -11198,7 +11198,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 178396622,
+      "offset": 180555713,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/menu_under_mirrors_artifacts_a.entities",
@@ -11206,7 +11206,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 178398051,
+      "offset": 180557142,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/menu_under_mirrors_artifacts_a.entities",
@@ -11214,7 +11214,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 178399480,
+      "offset": 180558571,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/menu_under_mirrors_artifacts_a.entities",
@@ -11222,7 +11222,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 179186664,
+      "offset": 181345731,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/menu_under_skipping_misc_beams_a.entities",
@@ -11230,7 +11230,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 179188011,
+      "offset": 181347078,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/menu_under_skipping_misc_beams_a.entities",
@@ -11238,7 +11238,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 179256115,
+      "offset": 181415182,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/menu_under_skipping_misc_beams_a.entities",
@@ -11246,7 +11246,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181170610,
+      "offset": 183338504,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/metamirror_different_dir_alt.entities",
@@ -11254,7 +11254,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181276143,
+      "offset": 183444037,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_2_alt_2.entities",
@@ -11262,7 +11262,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181404723,
+      "offset": 183572617,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_3_alt_2.entities",
@@ -11270,7 +11270,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181406163,
+      "offset": 183574057,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_3_alt_2.entities",
@@ -11278,7 +11278,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181407603,
+      "offset": 183575497,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_3_alt_2.entities",
@@ -11286,7 +11286,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181536306,
+      "offset": 183704200,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_5_alt.entities",
@@ -11294,7 +11294,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181537746,
+      "offset": 183705640,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_5_alt.entities",
@@ -11302,7 +11302,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181594659,
+      "offset": 183762553,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_v2.entities",
@@ -11310,7 +11310,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181697202,
+      "offset": 183865096,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_v2.entities",
@@ -11318,7 +11318,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 181698642,
+      "offset": 183866536,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/metamirror_same_dir_v2.entities",
@@ -11326,7 +11326,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 186839477,
+      "offset": 188999845,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/mirror_motion.entities",
@@ -11334,7 +11334,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189581382,
+      "offset": 191741666,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11342,7 +11342,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189582754,
+      "offset": 191743038,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11350,7 +11350,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189584115,
+      "offset": 191744399,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11358,7 +11358,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189585487,
+      "offset": 191745771,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11366,7 +11366,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189626579,
+      "offset": 191786863,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11374,7 +11374,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189627951,
+      "offset": 191788235,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11382,7 +11382,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189629323,
+      "offset": 191789607,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11390,7 +11390,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189630695,
+      "offset": 191790979,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11398,7 +11398,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189632067,
+      "offset": 191792351,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/mission_impossible.entities",
@@ -11406,7 +11406,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189871435,
+      "offset": 192031719,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/mobile_cover_2.entities",
@@ -11414,7 +11414,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 189872782,
+      "offset": 192033066,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/mobile_cover_2.entities",
@@ -11422,7 +11422,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190440972,
+      "offset": 192603320,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11430,7 +11430,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190442309,
+      "offset": 192604657,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11438,7 +11438,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190635277,
+      "offset": 192797625,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11446,7 +11446,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190656094,
+      "offset": 192818442,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11454,7 +11454,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190660847,
+      "offset": 192823195,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/monster_drop.entities",
@@ -11462,7 +11462,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190703087,
+      "offset": 192865435,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/monster_drop.entities",
@@ -11470,7 +11470,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190707599,
+      "offset": 192869947,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11478,7 +11478,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190709282,
+      "offset": 192871630,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/monster_drop.entities",
@@ -11486,7 +11486,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190712126,
+      "offset": 192874474,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11494,7 +11494,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190715412,
+      "offset": 192877760,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/monster_drop.entities",
@@ -11502,7 +11502,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190723945,
+      "offset": 192886293,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11510,7 +11510,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190726248,
+      "offset": 192888596,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/monster_drop.entities",
@@ -11518,7 +11518,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190738787,
+      "offset": 192901135,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11526,7 +11526,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190740470,
+      "offset": 192902818,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/monster_drop.entities",
@@ -11534,7 +11534,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190810978,
+      "offset": 192973326,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11542,7 +11542,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 190812315,
+      "offset": 192974663,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/monster_drop.entities",
@@ -11550,7 +11550,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 191137776,
+      "offset": 193303075,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/monster_mover.entities",
@@ -11558,7 +11558,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 191361278,
+      "offset": 193526577,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/monster_mover.entities",
@@ -11566,7 +11566,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 191362634,
+      "offset": 193527933,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/monster_mover.entities",
@@ -11574,7 +11574,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 191364014,
+      "offset": 193529313,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/monster_mover.entities",
@@ -11582,7 +11582,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 193767617,
+      "offset": 195932832,
       "before": "00001041",
       "after": "00009040",
       "entry": "data-common/moving_a_mirror.entities",
@@ -11590,7 +11590,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 193768805,
+      "offset": 195934020,
       "before": "00001041",
       "after": "00009040",
       "entry": "data-common/moving_a_mirror.entities",
@@ -11598,7 +11598,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 193769993,
+      "offset": 195935208,
       "before": "00001041",
       "after": "00009040",
       "entry": "data-common/moving_a_mirror.entities",
@@ -11606,7 +11606,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 193956809,
+      "offset": 196122012,
       "before": "0c133942",
       "after": "0c13b941",
       "entry": "data-common/moving_bridge.entities",
@@ -11614,7 +11614,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 197985545,
+      "offset": 200150628,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/new_cleric_fly.entities",
@@ -11622,7 +11622,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 197986821,
+      "offset": 200151904,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/new_cleric_fly.entities",
@@ -11630,7 +11630,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 197988664,
+      "offset": 200153747,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/new_cleric_fly.entities",
@@ -11638,7 +11638,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 197990138,
+      "offset": 200155221,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/new_cleric_fly.entities",
@@ -11646,7 +11646,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 198197622,
+      "offset": 200362705,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/new_cleric_fly.entities",
@@ -11654,7 +11654,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 198198906,
+      "offset": 200363989,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/new_cleric_fly.entities",
@@ -11662,7 +11662,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 198768737,
+      "offset": 200933808,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/new_way_mirror_later.entities",
@@ -11670,7 +11670,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 198770054,
+      "offset": 200935125,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/new_way_mirror_later.entities",
@@ -11678,7 +11678,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201363543,
+      "offset": 203528512,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/on_command.entities",
@@ -11686,7 +11686,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201364879,
+      "offset": 203529848,
       "before": "00008042",
       "after": "00000042",
       "entry": "data-common/on_command.entities",
@@ -11694,7 +11694,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201366456,
+      "offset": 203531425,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/on_command.entities",
@@ -11702,7 +11702,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201640238,
+      "offset": 203805207,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/on_command.entities",
@@ -11710,7 +11710,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201688207,
+      "offset": 203853164,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/on_the_rocks.entities",
@@ -11718,7 +11718,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201689563,
+      "offset": 203854520,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/on_the_rocks.entities",
@@ -11726,7 +11726,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 201690919,
+      "offset": 203855876,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/on_the_rocks.entities",
@@ -11734,7 +11734,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202188000,
+      "offset": 204352945,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/one_bird_two_stones.entities",
@@ -11742,7 +11742,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202799841,
+      "offset": 204964749,
       "before": "00000c42",
       "after": "00008c41",
       "entry": "data-common/one_of_each.entities",
@@ -11750,7 +11750,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202862237,
+      "offset": 205027145,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/one_of_each.entities",
@@ -11758,7 +11758,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202882729,
+      "offset": 205047637,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/one_of_each.entities",
@@ -11766,7 +11766,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202883781,
+      "offset": 205048689,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/one_of_each.entities",
@@ -11774,7 +11774,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202885229,
+      "offset": 205050137,
       "before": "00004041",
       "after": "0000c040",
       "entry": "data-common/one_of_each.entities",
@@ -11782,7 +11782,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202886281,
+      "offset": 205051189,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/one_of_each.entities",
@@ -11790,7 +11790,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202892810,
+      "offset": 205057718,
       "before": "0000a042",
       "after": "00002042",
       "entry": "data-common/one_of_each.entities",
@@ -11798,7 +11798,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202986188,
+      "offset": 205151096,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/one_of_each.entities",
@@ -11806,7 +11806,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202988964,
+      "offset": 205153872,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/one_of_each.entities",
@@ -11814,7 +11814,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202989988,
+      "offset": 205154896,
       "before": "0000c841",
       "after": "00004841",
       "entry": "data-common/one_of_each.entities",
@@ -11822,7 +11822,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202991012,
+      "offset": 205155920,
       "before": "00007041",
       "after": "0000f040",
       "entry": "data-common/one_of_each.entities",
@@ -11830,7 +11830,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 202992036,
+      "offset": 205156944,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/one_of_each.entities",
@@ -11838,7 +11838,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 210522095,
+      "offset": 212688283,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/overworld.entities",
@@ -11846,7 +11846,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 212149919,
+      "offset": 214317727,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/overworld.entities",
@@ -11854,7 +11854,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 212276834,
+      "offset": 214444652,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/overworld.entities",
@@ -11862,7 +11862,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 212321408,
+      "offset": 214489242,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/overworld.entities",
@@ -11870,7 +11870,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 212444692,
+      "offset": 214612586,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -11878,7 +11878,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 215802240,
+      "offset": 217972095,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/overworld.entities",
@@ -11886,7 +11886,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 216904395,
+      "offset": 219074762,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -11894,7 +11894,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 217030844,
+      "offset": 219201151,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/overworld.entities",
@@ -11902,7 +11902,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 219354619,
+      "offset": 221525704,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/overworld.entities",
@@ -11910,7 +11910,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 219397680,
+      "offset": 221568821,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/overworld.entities",
@@ -11918,7 +11918,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 221779407,
+      "offset": 223954450,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -11926,7 +11926,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 222209135,
+      "offset": 224384304,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/overworld.entities",
@@ -11934,7 +11934,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 224816348,
+      "offset": 226994342,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -11942,7 +11942,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 226435749,
+      "offset": 228616097,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -11950,7 +11950,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 227467003,
+      "offset": 229648170,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/overworld.entities",
@@ -11958,7 +11958,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 228052934,
+      "offset": 230234803,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -11966,7 +11966,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 229968407,
+      "offset": 232152800,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/overworld.entities",
@@ -11974,7 +11974,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 230092586,
+      "offset": 232277033,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/overworld.entities",
@@ -11982,7 +11982,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 230256449,
+      "offset": 232440976,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -11990,7 +11990,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 231290147,
+      "offset": 233474798,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -11998,7 +11998,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 232926542,
+      "offset": 235112811,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12006,7 +12006,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 234525242,
+      "offset": 236713502,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12014,7 +12014,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 235318200,
+      "offset": 237508375,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -12022,7 +12022,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 236107038,
+      "offset": 238293006,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/overworld.entities",
@@ -12030,7 +12030,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 236152375,
+      "offset": 238343412,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12038,7 +12038,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 237732849,
+      "offset": 239925574,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12046,7 +12046,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 237943283,
+      "offset": 240137520,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12054,7 +12054,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 239342625,
+      "offset": 241537995,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12062,7 +12062,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 240935700,
+      "offset": 243133858,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12070,7 +12070,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 241212662,
+      "offset": 243412371,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/overworld.entities",
@@ -12078,7 +12078,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 241993422,
+      "offset": 244192316,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/overworld.entities",
@@ -12086,7 +12086,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 242267468,
+      "offset": 244466345,
       "before": "00007041",
       "after": "0000f040",
       "entry": "data-common/overworld.entities",
@@ -12094,7 +12094,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 242542174,
+      "offset": 244742009,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12102,7 +12102,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 243122755,
+      "offset": 245322846,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -12110,7 +12110,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 244127436,
+      "offset": 246328562,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12118,7 +12118,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 244404147,
+      "offset": 246606483,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/overworld.entities",
@@ -12126,7 +12126,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 244710143,
+      "offset": 246912519,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -12134,7 +12134,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 245748839,
+      "offset": 247951129,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12142,7 +12142,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 246233309,
+      "offset": 248437177,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/overworld.entities",
@@ -12150,7 +12150,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 246323515,
+      "offset": 248527423,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -12158,7 +12158,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 247670575,
+      "offset": 249876334,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/overworld.entities",
@@ -12166,7 +12166,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 248961959,
+      "offset": 251167718,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12174,7 +12174,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 249528589,
+      "offset": 251735418,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/overworld.entities",
@@ -12182,7 +12182,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 250778386,
+      "offset": 252986354,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/overworld.entities",
@@ -12190,7 +12190,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 255773336,
+      "offset": 257983150,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/overworld.entities",
@@ -12198,7 +12198,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 257390045,
+      "offset": 259600270,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/overworld.entities",
@@ -12206,7 +12206,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 270200148,
+      "offset": 272421631,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/overworld.entities",
@@ -12214,7 +12214,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 270362860,
+      "offset": 272584004,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/overworld.entities",
@@ -12222,7 +12222,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 274221857,
+      "offset": 276443998,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/overworld.entities",
@@ -12230,7 +12230,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 275725178,
+      "offset": 277946219,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/pachinko_rescue_w.entities",
@@ -12238,7 +12238,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 275874831,
+      "offset": 278095872,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/pachinko_rescue_w.entities",
@@ -12246,7 +12246,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 275876260,
+      "offset": 278097301,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/pachinko_rescue_w.entities",
@@ -12254,7 +12254,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 275877689,
+      "offset": 278098730,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/pachinko_rescue_w.entities",
@@ -12262,7 +12262,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 276159674,
+      "offset": 278380703,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/partial_pull.entities",
@@ -12270,7 +12270,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 277880956,
+      "offset": 280101769,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/pillars.entities",
@@ -12278,7 +12278,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 277882295,
+      "offset": 280103108,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/pillars.entities",
@@ -12286,7 +12286,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 279274303,
+      "offset": 281495068,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/plus_signs_v3.entities",
@@ -12294,7 +12294,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 279275986,
+      "offset": 281496751,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/plus_signs_v3.entities",
@@ -12302,7 +12302,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 279277380,
+      "offset": 281498145,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/plus_signs_v3.entities",
@@ -12310,7 +12310,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 280124738,
+      "offset": 282345491,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/pole_vault.entities",
@@ -12318,7 +12318,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 280126022,
+      "offset": 282346775,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/pole_vault.entities",
@@ -12326,7 +12326,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 280127306,
+      "offset": 282348059,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/pole_vault.entities",
@@ -12334,7 +12334,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 280519362,
+      "offset": 282740103,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/pool_pal_v2.entities",
@@ -12342,7 +12342,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 280520919,
+      "offset": 282741660,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/pool_pal_v2.entities",
@@ -12350,7 +12350,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 280934571,
+      "offset": 283155300,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/portable_stairs.entities",
@@ -12358,7 +12358,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 281601479,
+      "offset": 283822184,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/priest_3d_goblin_pass.entities",
@@ -12366,7 +12366,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 281604310,
+      "offset": 283825015,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/priest_3d_goblin_pass.entities",
@@ -12374,7 +12374,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 283345453,
+      "offset": 285570146,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/priest_two_warriors_v3.entities",
@@ -12382,7 +12382,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 283440548,
+      "offset": 285664592,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/priest_two_warriors_v3.entities",
@@ -12390,7 +12390,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 283570491,
+      "offset": 285794535,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/priest_two_warriors_v3.entities",
@@ -12398,7 +12398,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 283571908,
+      "offset": 285795952,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/priest_two_warriors_v3.entities",
@@ -12406,7 +12406,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 284080657,
+      "offset": 286308533,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/priest_water_back_goblin.entities",
@@ -12414,7 +12414,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 284442795,
+      "offset": 286670659,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/priest_water_back_place_v3.entities",
@@ -12422,7 +12422,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 285943712,
+      "offset": 288171552,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst1_streamlined.entities",
@@ -12430,7 +12430,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 285960524,
+      "offset": 288188364,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst1_streamlined.entities",
@@ -12438,7 +12438,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 285961559,
+      "offset": 288189399,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst1_streamlined.entities",
@@ -12446,7 +12446,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 285962594,
+      "offset": 288190434,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst1_streamlined.entities",
@@ -12454,7 +12454,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 286978737,
+      "offset": 289206577,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/promesst2.5_deeper.entities",
@@ -12462,7 +12462,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 286980131,
+      "offset": 289207971,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/promesst2.5_deeper.entities",
@@ -12470,7 +12470,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 286981525,
+      "offset": 289209365,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/promesst2.5_deeper.entities",
@@ -12478,7 +12478,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 286982919,
+      "offset": 289210759,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/promesst2.5_deeper.entities",
@@ -12486,7 +12486,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287096593,
+      "offset": 289324433,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/promesst2.5_deeper.entities",
@@ -12494,7 +12494,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287458655,
+      "offset": 289686483,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12502,7 +12502,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287459690,
+      "offset": 289687518,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12510,7 +12510,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287460725,
+      "offset": 289688553,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12518,7 +12518,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287461760,
+      "offset": 289689588,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12526,7 +12526,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287718520,
+      "offset": 289946348,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12534,7 +12534,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 287719949,
+      "offset": 289947777,
       "before": "0000003f",
       "after": "0000803e",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12542,7 +12542,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 288829936,
+      "offset": 291057764,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12550,7 +12550,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 288830971,
+      "offset": 291058799,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12558,7 +12558,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 288832006,
+      "offset": 291059834,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12566,7 +12566,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 288833041,
+      "offset": 291060869,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/promesst2_streamlined.entities",
@@ -12574,7 +12574,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291197830,
+      "offset": 293425666,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/pugo.entities",
@@ -12582,7 +12582,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291230591,
+      "offset": 293458415,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_it_v4.entities",
@@ -12590,7 +12590,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291369108,
+      "offset": 293596932,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_it_v4.entities",
@@ -12598,7 +12598,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291371648,
+      "offset": 293599472,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_it_v4.entities",
@@ -12606,7 +12606,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291558957,
+      "offset": 293786769,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/pull_skip_twins_v3.entities",
@@ -12614,7 +12614,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291560206,
+      "offset": 293788018,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_skip_twins_v3.entities",
@@ -12622,7 +12622,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291560990,
+      "offset": 293788802,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_skip_twins_v3.entities",
@@ -12630,7 +12630,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291561774,
+      "offset": 293789586,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_skip_twins_v3.entities",
@@ -12638,7 +12638,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291849126,
+      "offset": 294076938,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/pull_teamwork_alt.entities",
@@ -12646,7 +12646,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291857295,
+      "offset": 294085107,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_teamwork_alt.entities",
@@ -12654,7 +12654,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291887405,
+      "offset": 294115217,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_teamwork_alt.entities",
@@ -12662,7 +12662,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291900853,
+      "offset": 294128665,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_teamwork_alt.entities",
@@ -12670,7 +12670,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291927313,
+      "offset": 294155125,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_teamwork_alt.entities",
@@ -12678,7 +12678,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 291990665,
+      "offset": 294218477,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/pull_teamwork_alt.entities",
@@ -12686,7 +12686,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 295877442,
+      "offset": 298105051,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/push_against.entities",
@@ -12694,7 +12694,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296049195,
+      "offset": 298276804,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/push_against.entities",
@@ -12702,7 +12702,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296066413,
+      "offset": 298294022,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/push_against.entities",
@@ -12710,7 +12710,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296069761,
+      "offset": 298297370,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/push_against.entities",
@@ -12718,7 +12718,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296072231,
+      "offset": 298299840,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/push_against.entities",
@@ -12726,7 +12726,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296075856,
+      "offset": 298303465,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/push_against.entities",
@@ -12734,7 +12734,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296163540,
+      "offset": 298391137,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/push_and_pull_zach.entities",
@@ -12742,7 +12742,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296760983,
+      "offset": 298991704,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/push_down_v2.entities",
@@ -12750,7 +12750,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296762624,
+      "offset": 298993345,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/push_down_v2.entities",
@@ -12758,7 +12758,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296763919,
+      "offset": 298994640,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/push_down_v2.entities",
@@ -12766,7 +12766,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296765214,
+      "offset": 298995935,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/push_down_v2.entities",
@@ -12774,7 +12774,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 296766509,
+      "offset": 298997230,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/push_down_v2.entities",
@@ -12782,7 +12782,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 298764781,
+      "offset": 300995454,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/put_down_roots_v3.entities",
@@ -12790,7 +12790,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299106709,
+      "offset": 301337370,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/quad_torch.entities",
@@ -12798,7 +12798,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299133043,
+      "offset": 301363692,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/quad_torch_v1.entities",
@@ -12806,7 +12806,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299162463,
+      "offset": 301393112,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/quadrants.entities",
@@ -12814,7 +12814,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299165804,
+      "offset": 301396453,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/quadrants.entities",
@@ -12822,7 +12822,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299167105,
+      "offset": 301397754,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/quadrants.entities",
@@ -12830,7 +12830,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299168373,
+      "offset": 301399022,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/quadrants.entities",
@@ -12838,7 +12838,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 299945517,
+      "offset": 302176142,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/quick_redirect_v5.entities",
@@ -12846,7 +12846,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 303048419,
+      "offset": 305279147,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/regular_mirror_v4.entities",
@@ -12854,7 +12854,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 303049629,
+      "offset": 305280357,
       "before": "00001041",
       "after": "00009040",
       "entry": "data-common/regular_mirror_v4.entities",
@@ -12862,7 +12862,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 303549144,
+      "offset": 305779836,
       "before": "00002042",
       "after": "0000a041",
       "entry": "data-common/repel.entities",
@@ -12870,7 +12870,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 303572844,
+      "offset": 305803536,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/repel.entities",
@@ -12878,7 +12878,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 303574132,
+      "offset": 305804824,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/repel.entities",
@@ -12886,7 +12886,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 303575779,
+      "offset": 305806471,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/repel.entities",
@@ -12894,7 +12894,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 306350568,
+      "offset": 308581188,
       "before": "0c133942",
       "after": "0c13b941",
       "entry": "data-common/ride_together.entities",
@@ -12902,7 +12902,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 306351911,
+      "offset": 308582531,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/ride_together.entities",
@@ -12910,7 +12910,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 306707719,
+      "offset": 308938327,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12918,7 +12918,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 306709031,
+      "offset": 308939639,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12926,7 +12926,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307660609,
+      "offset": 309891217,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12934,7 +12934,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307661921,
+      "offset": 309892529,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12942,7 +12942,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307663233,
+      "offset": 309893841,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12950,7 +12950,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307664545,
+      "offset": 309895153,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12958,7 +12958,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307665857,
+      "offset": 309896465,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12966,7 +12966,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307667169,
+      "offset": 309897777,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12974,7 +12974,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307668481,
+      "offset": 309899089,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12982,7 +12982,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 307669793,
+      "offset": 309900401,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/river_dictionary_alt_up.entities",
@@ -12990,7 +12990,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 312713360,
+      "offset": 314943859,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat.entities",
@@ -12998,7 +12998,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 312714899,
+      "offset": 314945398,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat.entities",
@@ -13006,7 +13006,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 312716172,
+      "offset": 314946671,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/rowboat.entities",
@@ -13014,7 +13014,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 312717448,
+      "offset": 314947947,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/rowboat.entities",
@@ -13022,7 +13022,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 312718724,
+      "offset": 314949223,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/rowboat.entities",
@@ -13030,7 +13030,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 313205442,
+      "offset": 315435929,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat_wizard_v2.entities",
@@ -13038,7 +13038,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 313206726,
+      "offset": 315437213,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat_wizard_v2.entities",
@@ -13046,7 +13046,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 313208010,
+      "offset": 315438497,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat_wizard_v2.entities",
@@ -13054,7 +13054,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 313209294,
+      "offset": 315439781,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat_wizard_v2.entities",
@@ -13062,7 +13062,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 313210578,
+      "offset": 315441065,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/rowboat_wizard_v2.entities",
@@ -13070,7 +13070,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 319055193,
+      "offset": 321285216,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/shunt2_alt.entities",
@@ -13078,7 +13078,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 319056600,
+      "offset": 321286623,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/shunt2_alt.entities",
@@ -13086,7 +13086,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 319057994,
+      "offset": 321288017,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/shunt2_alt.entities",
@@ -13094,7 +13094,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 320489537,
+      "offset": 322721077,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/side_sub_v2.entities",
@@ -13102,7 +13102,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 323755214,
+      "offset": 325986622,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/sister_staircase_harder.entities",
@@ -13110,7 +13110,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 323756492,
+      "offset": 325987900,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/sister_staircase_harder.entities",
@@ -13118,7 +13118,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 323758475,
+      "offset": 325989883,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/sister_staircase_harder.entities",
@@ -13126,7 +13126,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 323759763,
+      "offset": 325991171,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/sister_staircase_harder.entities",
@@ -13134,7 +13134,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 325322846,
+      "offset": 327553576,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/skip_purple_drop_alt.entities",
@@ -13142,7 +13142,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 325324193,
+      "offset": 327554923,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/skip_purple_drop_alt.entities",
@@ -13150,7 +13150,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 325620018,
+      "offset": 327850583,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/skip_stack_1.entities",
@@ -13158,7 +13158,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 325621352,
+      "offset": 327851917,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/skip_stack_1.entities",
@@ -13166,7 +13166,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 338834167,
+      "offset": 341066638,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/slot_machine_v2.entities",
@@ -13174,7 +13174,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 338838930,
+      "offset": 341071401,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/slot_machine_v2.entities",
@@ -13182,7 +13182,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 338840275,
+      "offset": 341072746,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/slot_machine_v2.entities",
@@ -13190,7 +13190,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 338841620,
+      "offset": 341074091,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/slot_machine_v2.entities",
@@ -13198,7 +13198,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 340729106,
+      "offset": 342961541,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/smash_midskip_simpler4.entities",
@@ -13206,7 +13206,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 344706677,
+      "offset": 346939012,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/sprint_skip0.entities",
@@ -13214,7 +13214,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 345862463,
+      "offset": 348094729,
       "before": "0000c842",
       "after": "00004842",
       "entry": "data-common/stasis_v2.entities",
@@ -13222,7 +13222,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 348034428,
+      "offset": 350266610,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/stones_not_crystals.entities",
@@ -13230,7 +13230,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 348035463,
+      "offset": 350267645,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/stones_not_crystals.entities",
@@ -13238,7 +13238,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 348036498,
+      "offset": 350268680,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/stones_not_crystals.entities",
@@ -13246,7 +13246,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 348629962,
+      "offset": 350862162,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/strategic_stack.entities",
@@ -13254,7 +13254,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350172210,
+      "offset": 352404374,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/sunk_cost_2_v3.entities",
@@ -13262,7 +13262,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350173566,
+      "offset": 352405730,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/sunk_cost_2_v3.entities",
@@ -13270,7 +13270,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350174922,
+      "offset": 352407086,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/sunk_cost_2_v3.entities",
@@ -13278,7 +13278,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350176278,
+      "offset": 352408442,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/sunk_cost_2_v3.entities",
@@ -13286,7 +13286,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350646096,
+      "offset": 352878236,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/surrounded.entities",
@@ -13294,7 +13294,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350647364,
+      "offset": 352879504,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/surrounded.entities",
@@ -13302,7 +13302,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 350648654,
+      "offset": 352880794,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/surrounded.entities",
@@ -13310,7 +13310,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353239450,
+      "offset": 355474343,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/synchronized_swimmers.entities",
@@ -13318,7 +13318,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353396378,
+      "offset": 355631271,
       "before": "00000042",
       "after": "00008041",
       "entry": "data-common/synchronized_swimmers.entities",
@@ -13326,7 +13326,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353397802,
+      "offset": 355632695,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/synchronized_swimmers.entities",
@@ -13334,7 +13334,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353605089,
+      "offset": 355839958,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/tall_stack.entities",
@@ -13342,7 +13342,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353606406,
+      "offset": 355841275,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/tall_stack.entities",
@@ -13350,7 +13350,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353607723,
+      "offset": 355842592,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/tall_stack.entities",
@@ -13358,7 +13358,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353838529,
+      "offset": 356073386,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/tandem.entities",
@@ -13366,7 +13366,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353839889,
+      "offset": 356074746,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/tandem.entities",
@@ -13374,7 +13374,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353841523,
+      "offset": 356076380,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/tandem.entities",
@@ -13382,7 +13382,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 353977858,
+      "offset": 356212715,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/tandem.entities",
@@ -13390,7 +13390,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 354347860,
+      "offset": 356582717,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/team_building_exercise.entities",
@@ -13398,7 +13398,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 355647066,
+      "offset": 357883373,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/the_sky_is_falling_v2.entities",
@@ -13406,7 +13406,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 356580609,
+      "offset": 358816892,
       "before": "0000e040",
       "after": "00006040",
       "entry": "data-common/the_waterfall_v4.entities",
@@ -13414,7 +13414,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 366128673,
+      "offset": 368337973,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/to_kill_a_goblin.entities",
@@ -13422,7 +13422,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 366177293,
+      "offset": 368386593,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/to_kill_a_goblin.entities",
@@ -13430,7 +13430,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 366195064,
+      "offset": 368404364,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/to_kill_a_goblin.entities",
@@ -13438,7 +13438,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 366311893,
+      "offset": 368521193,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/to_kill_a_goblin.entities",
@@ -13446,7 +13446,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 366337707,
+      "offset": 368547007,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/to_kill_a_goblin.entities",
@@ -13454,7 +13454,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 366534572,
+      "offset": 368743872,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/to_kill_a_goblin.entities",
@@ -13462,7 +13462,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 368150223,
+      "offset": 370359475,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/torcher.entities",
@@ -13470,7 +13470,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 368306575,
+      "offset": 370515827,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/torcoban_2.entities",
@@ -13478,7 +13478,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 369854785,
+      "offset": 372063989,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/trick_kills.entities",
@@ -13486,7 +13486,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370083513,
+      "offset": 372292693,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/trick_shot.entities",
@@ -13494,7 +13494,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370084926,
+      "offset": 372294106,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13502,7 +13502,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370087396,
+      "offset": 372296576,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13510,7 +13510,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370089866,
+      "offset": 372299046,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13518,7 +13518,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370092336,
+      "offset": 372301516,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13526,7 +13526,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370094806,
+      "offset": 372303986,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13534,7 +13534,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370097276,
+      "offset": 372306456,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13542,7 +13542,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370098591,
+      "offset": 372307771,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13550,7 +13550,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370102216,
+      "offset": 372313019,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13558,7 +13558,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370104686,
+      "offset": 372315489,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13566,7 +13566,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370107156,
+      "offset": 372317959,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/trick_shot.entities",
@@ -13574,7 +13574,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370306385,
+      "offset": 372515010,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/tricky_endpoint.entities",
@@ -13582,7 +13582,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370877130,
+      "offset": 373086651,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/tricky_swappers_v3.entities",
@@ -13590,7 +13590,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370878316,
+      "offset": 373087837,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/tricky_swappers_v3.entities",
@@ -13598,7 +13598,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370879699,
+      "offset": 373089220,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/tricky_swappers_v3.entities",
@@ -13606,7 +13606,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370881082,
+      "offset": 373090603,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/tricky_swappers_v3.entities",
@@ -13614,7 +13614,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 370937854,
+      "offset": 373147297,
       "before": "0000c041",
       "after": "00004041",
       "entry": "data-common/triple_gate.entities",
@@ -13622,7 +13622,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 371611503,
+      "offset": 373822111,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/tug_boat.entities",
@@ -13630,7 +13630,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 372592732,
+      "offset": 374803316,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/two_dragon_rooms.entities",
@@ -13638,7 +13638,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 372729183,
+      "offset": 374939755,
       "before": "00008041",
       "after": "00000041",
       "entry": "data-common/two_for_one.entities",
@@ -13646,7 +13646,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 373528845,
+      "offset": 375739405,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/two_step.entities",
@@ -13654,7 +13654,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 374150273,
+      "offset": 376360809,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/unblock_block_alt.entities",
@@ -13662,7 +13662,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375320640,
+      "offset": 377531128,
       "before": "00004042",
       "after": "0000c041",
       "entry": "data-common/useful_stone.entities",
@@ -13670,7 +13670,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375490452,
+      "offset": 377700940,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/useful_stone.entities",
@@ -13678,7 +13678,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375492933,
+      "offset": 377703421,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/useful_stone.entities",
@@ -13686,7 +13686,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375495414,
+      "offset": 377705902,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/useful_stone.entities",
@@ -13694,7 +13694,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375497895,
+      "offset": 377708383,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/useful_stone.entities",
@@ -13702,7 +13702,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375500376,
+      "offset": 377710864,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/useful_stone.entities",
@@ -13710,7 +13710,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 375503757,
+      "offset": 377714245,
       "before": "0000a841",
       "after": "00000000",
       "entry": "data-common/useful_stone.entities",
@@ -13718,7 +13718,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 376512765,
+      "offset": 378723217,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/vertical_unclone_3.entities",
@@ -13726,7 +13726,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 378392915,
+      "offset": 380603331,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/walk_the_plank.entities",
@@ -13734,7 +13734,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 378394216,
+      "offset": 380604632,
       "before": "00000041",
       "after": "00008040",
       "entry": "data-common/walk_the_plank.entities",
@@ -13742,7 +13742,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 382987951,
+      "offset": 385186114,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/wizard_jailbreak_v2.entities",
@@ -13750,7 +13750,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 383000772,
+      "offset": 385198935,
       "before": "00000042",
       "after": "00000000",
       "entry": "data-common/wizard_jailbreak_v2.entities",
@@ -13758,7 +13758,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384241469,
+      "offset": 386439620,
       "before": "0000c042",
       "after": "00004042",
       "entry": "data-common/wizard_with_a_capital_w.entities",
@@ -13766,7 +13766,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384246164,
+      "offset": 386444315,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/wizard_with_a_capital_w.entities",
@@ -13774,7 +13774,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384246948,
+      "offset": 386445099,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/wizard_with_a_capital_w.entities",
@@ -13782,7 +13782,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384247732,
+      "offset": 386445883,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/wizard_with_a_capital_w.entities",
@@ -13790,7 +13790,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384248516,
+      "offset": 386446667,
       "before": "00008040",
       "after": "00000040",
       "entry": "data-common/wizard_with_a_capital_w.entities",
@@ -13798,7 +13798,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384477267,
+      "offset": 386675418,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/wizard_with_a_capital_w_2_v2.entities",
@@ -13806,7 +13806,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384478244,
+      "offset": 386676395,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/wizard_with_a_capital_w_2_v2.entities",
@@ -13814,7 +13814,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384479093,
+      "offset": 386677244,
       "before": "00000043",
       "after": "00008042",
       "entry": "data-common/wizard_with_a_capital_w_2_v2.entities",
@@ -13822,7 +13822,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384483832,
+      "offset": 386681983,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/wizard_with_a_capital_w_2_v2.entities",
@@ -13830,7 +13830,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384484616,
+      "offset": 386682767,
       "before": "00004040",
       "after": "0000c03f",
       "entry": "data-common/wizard_with_a_capital_w_2_v2.entities",
@@ -13838,7 +13838,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 384494824,
+      "offset": 386692975,
       "before": "00000040",
       "after": "0000803f",
       "entry": "data-common/wizard_with_a_capital_w_2_v2.entities",
@@ -13846,7 +13846,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 385557507,
+      "offset": 387755634,
       "before": "0000a041",
       "after": "00002041",
       "entry": "data-common/wolf_boat_carry.entities",
@@ -13854,7 +13854,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 390273114,
+      "offset": 392471497,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/zachtronics.entities",
@@ -13862,7 +13862,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 390295788,
+      "offset": 392494171,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/zachtronics.entities",
@@ -13870,7 +13870,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 390676385,
+      "offset": 392874768,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/zachtronics.entities",
@@ -13878,7 +13878,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 390678701,
+      "offset": 392877084,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/zachtronics.entities",
@@ -13886,7 +13886,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 391628324,
+      "offset": 393826707,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/zachtronics_or.entities",
@@ -13894,7 +13894,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 391629692,
+      "offset": 393828075,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/zachtronics_or.entities",
@@ -13902,7 +13902,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 391773914,
+      "offset": 393972297,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/zachtronics_or.entities",
@@ -13910,7 +13910,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 391806024,
+      "offset": 394004407,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/zachtronics_or.entities",
@@ -13918,7 +13918,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 392547111,
+      "offset": 394745494,
       "before": "0000a040",
       "after": "00002040",
       "entry": "data-common/zachtronics_xor.entities",
@@ -13926,7 +13926,7 @@
       "field": "particles_per_second"
     },
     {
-      "offset": 392548479,
+      "offset": 394746862,
       "before": "00002041",
       "after": "0000a040",
       "entry": "data-common/zachtronics_xor.entities",

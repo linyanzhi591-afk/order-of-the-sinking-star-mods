@@ -6,27 +6,12 @@ import struct
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-HOOK = 0x3ca94c
+HOOK = 0x3c96a9
 BEFORE = bytes.fromhex('ba0d000000')
 MARKER = b'CHTOGGLE_V1\0'
 # 完整基础 exe 校验：原版、奔跑版、俯视 v0.1.5 单独版和合并版。
-BASE_HASHES = {
-    # 与现有兼容层保持一致，保留当前已识别的俯视版本。
-    '10b562b86e75b2e74c25193ca518830f1daaa489bb6570967430d9993598a519',
-    '49840668932e74f8549cd47fa0d70bbed2cb61e4cf03ff86aeca4926d104503f',
-    '66aec030ac3ae923a2000605985c6d8c53f845d2e90d620b420ce446048c826e',
-    '851f8b4d13b56b6fb514b152cbbb896e0245b4169ea6d573ce013a04eb1564df',
-    '891db690b6f2daff7e9f7e4a10eaaf8121c3a77b9e0a5e9a6290c51ad3f558dc',
-    'd52ed111a966c78b106ee85825eb8a94cdbcd158c5cde2387bc27ce03d9c8697',
+BASE_HASHES = {'fb4699c1753564533b86f5f5ace7ad7a22fb233d065131bb9fef483b886abecf', 'd802098b7cb85eadfc733b88d1554042fad950c572e916febea3f669a474a549', 'ca8235abc33e9f4a593ab14acd0d17842a5de8460f0d90ae25ca10b225899f9c', 'b838fda62e2bf88ff3c61c04db4540613d461554dc3ac1afd78f99e5f656e661'}
 
-    # 当前俯视 v0.1.6 的原版／奔跑组合，保持 P 键载荷不变。
-    'a426f1c1071761379e4a2c8cc5e0c35bb7020436bf5ed84aba1c1672c4b3d493',
-    'bbd4d42d0b94d6481afd953e5240bdc69e85968e152d1cab78398ed410b8f8e4',
-    '0ae10a513dae25286fe93d0db4fa8a2df9a473bc07e1734e12bc1ad30166db1c',
-    'bda4419d1f7e7a79f9aaa3e069ae32fe3e19a827afd8bfb3e21cbab534c60505',
-    '977b15d562b797c7134f69779b608d9563a4a81aa5b087539b214f9d234981f0',
-    'f25d733340cf9079303d8c3128718f5c85f3d6475173a65ca2b80a7b55a02f76',
-}
 
 
 def sha(data):
@@ -97,4 +82,4 @@ def split(data):
     return base,meta['key']
 
 
-PAYLOAD_SHA = '8c0ff416704cac90b055a26a83d506370a3d3a8c6548265ed0fa37fc95833a3e'
+PAYLOAD_SHA = '86cbfd8bfc49a35064ac07c04f2013f327bbd464ba63cce1a5597b8298fe4165'

@@ -9,9 +9,9 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parent
 BIN = Path(r'C:\Program Files (x86)\mingw64\bin')
-SYMBOLS = dict(iat_module=0x7c0258, iat_proc=0x7c0260, iat_pid=0x7c01f8,
-               iat_key=0x7c0000, native_step=0x8022e4, game_delta=0x804018,
-               delta_return=0x26246a, positive_loop=0x26427d, after_loop=0x264002)
+SYMBOLS = dict(iat_module=0x7bf1f8, iat_proc=0x7bf200, iat_pid=0x7bf190,
+               iat_key=0x7bef90, native_step=0x8012e4, game_delta=0x803070,
+               delta_return=0x2625ca, positive_loop=0x26432e, after_loop=0x2640b3)
 
 def build():
     variants = {}
@@ -21,7 +21,7 @@ def build():
             subprocess.run([str(BIN/'gcc.exe'), '-c', '-O2', '-mcmodel=small', '-ffreestanding',
                             '-fno-stack-protector', '-fno-asynchronous-unwind-tables', '-fno-ident',
                             str(ROOT/source), '-o', str(tmp/(source+'.o'))], check=True)
-        for rva in (0x113c000, 0x1146000, 0x1143000):
+        for rva in (0x113b000, 0x1145000, 0x1142000, 0x113e000):
             script = tmp/'layout.ld'
             script.write_text(f'SECTIONS {{ .text {rva:#x} : {{ *(.text*) *(.rdata*) }} .data {rva+0x2000:#x} : {{ *(.data*) *(.bss*) }} /DISCARD/ : {{ *(.eh_frame*) *(.pdata*) *(.xdata*) }} }}')
             exe = tmp/'payload.exe'

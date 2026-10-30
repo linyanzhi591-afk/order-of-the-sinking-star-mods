@@ -6,8 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 GAME = Path(r'D:\Program Files (x86)\Steam\steamapps\common\Order of the Sinking Star')
-ORIGINAL_SHA = '0ae10a513dae25286fe93d0db4fa8a2df9a473bc07e1734e12bc1ad30166db1c'
-RVA = 0x9BFF0
+ORIGINAL_SHA = 'd802098b7cb85eadfc733b88d1554042fad950c572e916febea3f669a474a549'
+RVA = 0x9D890
 OFFSET = RVA - 0x1000 + 0x400
 SIZE = 56
 
@@ -19,16 +19,16 @@ def make_callback():
         code.extend(op + struct.pack('<i', target - (RVA + len(code) + len(op) + 4 + len(tail))) + tail)
 
     # 保留原函数的模式检查；输入系统已在每个绑定处过滤长按重复。
-    rip(b'\x48\x83\x3d', 0xB6A808, b'\x01')
+    rip(b'\x48\x83\x3d', 0xB69810, b'\x01')
     code.extend(b'\x74\x00')
     first_jump = len(code) - 1
     code.extend(b'\x84\xd2\x74\x00')
     release_jump = len(code) - 1
-    rip(b'\x80\x35', 0xB6A1F8, b'\x01')  # 翻转奔跑状态
-    rip(b'\x0f\xb6\x05', 0xB6A1F8)
-    rip(b'\x88\x05', 0xB6A200)  # 本次按下标记与新状态一致
-    rip(b'\xc6\x05', 0xB6A201, b'\x00')
-    rip(b'\xc7\x05', 0xB6A1FC, b'\x00' * 4)
+    rip(b'\x80\x35', 0xB69200, b'\x01')  # 翻转奔跑状态
+    rip(b'\x0f\xb6\x05', 0xB69200)
+    rip(b'\x88\x05', 0xB69208)  # 本次按下标记与新状态一致
+    rip(b'\xc6\x05', 0xB69209, b'\x00')
+    rip(b'\xc7\x05', 0xB69204, b'\x00' * 4)
     end = len(code)
     code.append(0xC3)
     for jump in (first_jump, release_jump):
@@ -50,7 +50,7 @@ def main():
     patched[OFFSET:OFFSET + SIZE] = patch
     (ROOT / 'sinking_star.toggle-run.exe').write_bytes(patched)
     manifest = {
-        'build_id': 26006400,
+        'build_id': 26249670,
         'original_sha256': sha(original),
         'patched_sha256': sha(patched),
         'file_offset': OFFSET,

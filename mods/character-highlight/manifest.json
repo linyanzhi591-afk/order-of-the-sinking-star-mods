@@ -1,11 +1,11 @@
 {
   "name": "六职业彩色描边",
   "version": "0.2.1",
-  "steam_build": "26006400",
+  "steam_build": "26249670",
   "files": {
     "data/materials.package": {
-      "original_sha256": "dffd12a4f1002dc2f309d5b85205b432c1d7213764c798ccb693cd0ef5f1afc6",
-      "patched_sha256": "6ec74fbc74051ee4a4b241a2edba79322398102959ad63493d00fef1c34fa54b"
+      "original_sha256": "c31d712f7ab747b5846192a4720f1a7a142d09cae4a92dae84c82677d783857c",
+      "patched_sha256": "856bcf7033447f50354ce5fb61e3d8e83f36067ffbdbe09514902b42a156cbdb"
     },
     "data/mesh_outlines.mesh_outlines": {
       "original_sha256": "363fd47bb37fd9b98e77c8c7f81a1215285ca14964b197c1dc264896f1a38107",

@@ -12,3 +12,6 @@ bundle-tests-*/
 bundle-image-*/
 test-results.json
 *.tmp
+.compat-tools/
+.compat-work/
+releases/

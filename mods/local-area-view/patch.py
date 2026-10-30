@@ -8,13 +8,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 GAME = Path(r'D:\Program Files (x86)\Steam\steamapps\common\Order of the Sinking Star')
-ORIGINAL_SHA = '0ae10a513dae25286fe93d0db4fa8a2df9a473bc07e1734e12bc1ad30166db1c'
-RUN_SHA = 'bda4419d1f7e7a79f9aaa3e069ae32fe3e19a827afd8bfb3e21cbab534c60505'
+ORIGINAL_SHA = 'd802098b7cb85eadfc733b88d1554042fad950c572e916febea3f669a474a549'
+RUN_SHA = 'b838fda62e2bf88ff3c61c04db4540613d461554dc3ac1afd78f99e5f656e661'
 PAYLOAD_PATH = ROOT / 'camera_payload.json'
-PAYLOAD_SHA = 'd45eba9edd894df84e573b59f5ed228b8186f03086503daf2bef76e9f81e64c4'
+PAYLOAD_SHA = '99641904c382f81a9d03b3db79fe8502fc392a79fcb8be662b6c135665229b9d'
 LEGACY_PAYLOAD_PATH = ROOT / 'camera_payload_v4.json'
 LEGACY_PAYLOAD_SHA = 'd18571355195603fd8280faaf859fab6dc963b088159bcfdd975864c5ab44328'
-BASE_SIZE = 12327936
+BASE_SIZE = 12323328
 
 
 def split_extras(data):
@@ -78,31 +78,14 @@ def jump(source, target):
 
 
 def definitions(version=9):
-    if version in (3, 4, 5, 6, 7, 8, 9):
-        symbols = payload(version)['symbols']
-        return [
-            (0x23A820, bytes.fromhex('415741564154'), jump(0x23A820, symbols['hook_toggle']) + b'\x90'),
-            (0x25D7C0, bytes.fromhex('415741564155'), jump(0x25D7C0, symbols['hook_begin']) + b'\x90'),
-            (0x276B66, bytes.fromhex('4c8b742478'), jump(0x276B66, symbols['hook_end'])),
-        ]
-    # Q 的原有序言和输入锁保留，随后直接进入原生局部视图的 0/2 切换分支。
-    # 被跳过的 Q 专用扫描代码中放置辅助代码，不扩展 PE 节或改动重定位。
-    cave = 0x23A880
-    hook = 0x26A0F9
-    original_load = bytes.fromhex('0fb6b6a2030000')
-    helper = original_load + bytes.fromhex('4180bdd43d0000027505be01000000')
-    helper += jump(cave + len(helper), hook + 7)
-    patches = [
-        (0x23A840, bytes.fromhex('4c8d442440'), jump(0x23A840, 0x23A950)),
-        (cave, bytes.fromhex('488d44243848894424204889f94889f24531c04531c9e8158c0400488b5c2438'), helper.ljust(32, b'\x90')),
-        (hook, original_load, jump(hook, cave) + b'\x90\x90'),
+    if version != 9:
+        raise ValueError('Build 26249670 仅支持本合集重建的镜头载荷')
+    symbols = payload(version)['symbols']
+    return [
+        (0x23da80, bytes.fromhex('415741564154'), jump(0x23da80, symbols['hook_toggle'])+b'\x90'),
+        (0x25dcc0, bytes.fromhex('415741564155'), jump(0x25dcc0, symbols['hook_begin'])+b'\x90'),
+        (0x2764c9, bytes.fromhex('498b04244883c0fb'), jump(0x2764c9, symbols['hook_end'])+b'\x90'*3),
     ]
-    if version == 2:
-        # 缺少专用镜头时，仅保留局部模式 2；远距离模式 1 仍按原逻辑重置。
-        patches.append((0x43D53C, b'\x77', b'\x73'))
-    elif version != 1:
-        raise ValueError('未知补丁版本')
-    return patches
 
 
 def transform(data, enable, version=9):
@@ -133,12 +116,12 @@ def transform(data, enable, version=9):
                                  section['name'].encode(), virtual_size, section['rva'],
                                  rawsize, offset, 0, 0, 0, 0, section['flags'])
             struct.pack_into('<H', result, 0x7E, 11)
-            struct.pack_into('<I', result, 0xC8, 0x1140000)
+            struct.pack_into('<I', result, 0xC8, 0x113f000)
         else:
             result = result[:BASE_SIZE]
             result[0x2C0:0x338] = bytes(120)
             struct.pack_into('<H', result, 0x7E, 8)
-            struct.pack_into('<I', result, 0xC8, 0x113C000)
+            struct.pack_into('<I', result, 0xC8, 0x113B000)
     return bytes(result)
 
 

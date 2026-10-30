@@ -17,16 +17,11 @@ MARKER = b'WORLDSTEP_V3\0'
 LEGACY_MARKER = b'WORLDSTEP_V1\0'
 REPEAT_MARKER = b'WORLDSTEP_V2\0'
 LEGACY_PAYLOAD_SHA = '9be7e35f37c0c8263544d3b9ed95e72fa55396dfb98533aa0de9b7770fe763e5'
-PAYLOAD_SHA = '03779d5ce7bb8cc71590878f2c868204a15f87b626932be158a478e5c453ce28'
-BASE_HASHES = {
-    '0ae10a513dae25286fe93d0db4fa8a2df9a473bc07e1734e12bc1ad30166db1c': '原版 Build 26006400',
-    'bda4419d1f7e7a79f9aaa3e069ae32fe3e19a827afd8bfb3e21cbab534c60505': '奔跑切换',
-    '87ea04ab2be54238cf0fdf6617828a0fcbeb26045228c4ec68aaf4bd62d7f43b': '奔跑＋俯视 v0.1.6＋高亮 P＋网格 v0.2.0 O',
-    '4d09b567e98574e195ab1e8a0b5c625678d8cb4476499526bf99ac61cbd83c81': '奔跑＋俯视 v0.1.7＋高亮 P＋静态网格 GRIDSTATIC_V3 O',
-    '0d412308f7e7ab27362023517f648138aef3703bb7b764c72a1e2da8a08cbb73': '奔跑＋俯视 v0.1.9＋高亮 P；兼容独立粒子减量资源',
-}
-HOOKS = {0x262462: ('world_delta_hook', bytes.fromhex('f30f1105ae1b5a00')),
-         0x263ffc: ('world_gate_hook', bytes.fromhex('0f837b020000'))}
+PAYLOAD_SHA = 'acaebaabf05e2390ccb3544d5437d15726e7f94f292b7723360321f415d87359'
+BASE_HASHES = {'d802098b7cb85eadfc733b88d1554042fad950c572e916febea3f669a474a549': 'Build 26249670 已核验组合', 'b838fda62e2bf88ff3c61c04db4540613d461554dc3ac1afd78f99e5f656e661': 'Build 26249670 已核验组合', 'e6c958d7451e4c70037f0fc3e899e385cd70af13a1a7a9797c4d663ea257e836': 'Build 26249670 已核验组合'}
+HOOKS = {0x2625c2: ('world_delta_hook', bytes.fromhex('f30f1105a60a5a00')),
+         0x2640ad: ('world_gate_hook', bytes.fromhex('0f837b020000'))}
+
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()

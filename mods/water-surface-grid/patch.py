@@ -6,11 +6,11 @@ from pathlib import Path
 import struct
 
 ROOT = Path(__file__).resolve().parent
-WORLD_SHA = '690b758050beed3adf63d364c1dd5cda5e6e7938fe2ec02eaee373c670b0c3bd'
-SHADER_BASE_SHA = '9c5ce57d8d9e40f352690fe971ff1e8f313614495ddc29f9598f1a9a9497284c'
-WATER_EXE_SHA = '5d537ef6726847d39df9e786e9e087b3135c0ca18ab9f60690ec5ee567216c29'
-WATER_SHADER_SHA = '641edb243e436548dee1072ac6a0de1556774d4a26af5c2521ee4b579161e820'
-HOOK = 0x1fc2f2
+WORLD_SHA = '31b5d25848666ea275d6d04d3d5ca7c676e0822a88360e630ebd6f092c000e9f'
+SHADER_BASE_SHA = '405510e3856cd1988fe15b53bceb1fadd3be69830f67d6faea0f6b1678627104'
+WATER_EXE_SHA = 'a2433c02df3d6de2de4d3c152aa3328e778291bb7a2eea2464b7cba3b6884b5e'
+WATER_SHADER_SHA = '1b6809717a8c1dd401a7d5cb8bb90b1e1e18bb586da9ca914d1076f4b23b8f16'
+HOOK = 0x1ff7c2
 BEFORE = bytes.fromhex('488b4e08488b8190020000')
 MARKER = b'WATER_ONLY_V1\0'
 
@@ -165,16 +165,17 @@ def decode(src):
 
 def native_payload():
     raw = (ROOT/'native_payload.json').read_bytes()
-    require(sha(raw) == 'fa284eb615895523fcaf0c336d87b8277fdf197febc1f662e8ba12fa5e0457dd', '水面原生载荷校验失败')
+    require(sha(raw) == 'f69f76f97feb17e8dca9951b2b77a01a7f52c43e7b6bcb8908df8e55a827fcf8', '水面原生载荷校验失败')
     return json.loads(raw)
 
 
 def shader_base(data):
     if sha(data) == SHADER_BASE_SHA:
         return data, False
-    require(sha(data) == WATER_SHADER_SHA, '着色器包含未知修改或未完成网格，拒绝覆盖')
-    base = bytearray(data[:75155416])
-    struct.pack_into('<Q', base, 16, 74981376)
+    require(sha(data) == WATER_SHADER_SHA,
+            '着色器版本不匹配：本合集支持 Steam Build 26249670；游戏更新或其他补丁修改均会触发此检查，拒绝覆盖')
+    base = bytearray(data[:74952414])
+    struct.pack_into('<Q', base, 16, 74777830)
     base = bytes(base)
     require(sha(base) == SHADER_BASE_SHA, '水面着色器基础恢复失败')
     return base, True

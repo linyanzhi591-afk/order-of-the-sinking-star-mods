@@ -20,7 +20,7 @@ TARGETS = {'exe': 'sinking_star.exe', 'materials': 'data/materials.package',
            'outlines': 'data/mesh_outlines.mesh_outlines', 'levels': 'data/levels.package',
            'shaders': 'data/shaders.package'}
 ORDER = ['toggle-run', 'local-area-view', 'character-highlight', 'particle-reduction', 'world-step', 'water-surface-grid']
-VERSION = '1.1.0-test'
+VERSION = '1.1.1-test'
 MARGIN = 64 * 1024 * 1024
 
 

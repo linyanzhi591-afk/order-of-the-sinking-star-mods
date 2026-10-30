@@ -18,9 +18,10 @@ hook_outline:
     movups [rsp+0x60], xmm4
     movups [rsp+0x70], xmm5
     mov rcx, [rsi+0x88]
-    mov rdx, rbx
+    /* 新版原材质指针位于保存前的 rcx。 */
+    mov rdx, [rsp+0xa8]
     call select_outline
-    mov rbx, rax
+    mov [rsp+0xa8], rax
     movups xmm0, [rsp+0x20]
     movups xmm1, [rsp+0x30]
     movups xmm2, [rsp+0x40]

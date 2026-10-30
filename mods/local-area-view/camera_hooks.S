@@ -71,8 +71,10 @@ hook_begin:
 hook_end:
     /* 原函数内部 RSP 为 0 mod 16。 */
     save
-    mov rcx, r13
+    /* Build 26249670 的帧末 state 位于 r12。 */
+    mov rcx, r12
     call frame_end
     restore
-    mov r14, QWORD PTR [rsp+0x78]
+    mov rax, QWORD PTR [r12]
+    add rax, -5
     jmp return_end

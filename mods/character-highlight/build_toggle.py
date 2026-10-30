@@ -18,15 +18,15 @@ def build():
         for source in ('toggle.c', 'toggle.S'):
             subprocess.run([str(BIN/'gcc.exe'), '-c', '-O2', '-mcmodel=small', '-ffreestanding', '-fno-stack-protector',
                 '-fno-asynchronous-unwind-tables', '-fno-ident', str(ROOT/source), '-o', str(tmp/(source+'.o'))], check=True)
-        for rva in (0x113c000, 0x1140000):
+        for rva in (0x113b000, 0x113f000):
             script = tmp/'layout.ld'
             script.write_text(f'SECTIONS {{ .text {rva:#x} : {{ *(.text*) *(.rdata*) }} .data {rva+0x2000:#x} : {{ *(.data*) *(.bss*) }} /DISCARD/ : {{ *(.eh_frame*) *(.pdata*) *(.xdata*) }} }}')
             exe = tmp/'payload.exe'
             subprocess.run([str(BIN/'ld.exe'), '-mi386pep', '--image-base', '0', '-T', str(script),
-                '--defsym', 'material_capacity=0x10d4938', '--defsym', 'material_table=0x10d4960',
-                '--defsym', 'iat_module=0x7c0258', '--defsym', 'iat_proc=0x7c0260',
-                '--defsym', 'iat_pid=0x7c01f8', '--defsym', 'iat_key=0x7c0000',
-                '--defsym', 'return_outline=0x3ca951', '--entry', 'hook_outline', '--disable-auto-import',
+                '--defsym', 'material_capacity=0x10d3938', '--defsym', 'material_table=0x10d3960',
+                '--defsym', 'iat_module=0x7bf1f8', '--defsym', 'iat_proc=0x7bf200',
+                '--defsym', 'iat_pid=0x7bf190', '--defsym', 'iat_key=0x7bef90',
+                '--defsym', 'return_outline=0x3c96ae', '--entry', 'hook_outline', '--disable-auto-import',
                 str(tmp/'toggle.c.o'), str(tmp/'toggle.S.o'), '-o', str(exe)], check=True)
             b = exe.read_bytes(); pe = struct.unpack_from('<I', b, 60)[0]
             assert struct.unpack_from('<II', b, pe+24+112+5*8) == (0, 0)

@@ -1,4 +1,4 @@
-"""为 Build 26006400 生成保守的粒子减量补丁清单。"""
+"""为 Build 26249670 生成保守的粒子减量补丁清单。"""
 from collections import Counter
 import hashlib
 import json
@@ -119,7 +119,7 @@ def build():
     for a, b in zip(patches, patches[1:]):
         assert a['offset']+len(bytes.fromhex(a['before'])) <= b['offset']
     assert len(source) == len(result)
-    manifest = dict(version='0.1.0-test', build=26006400, file='data/levels.package',
+    manifest = dict(version='0.1.0-test', build=26249670, file='data/levels.package',
                     original_sha256=sha(source), patched_sha256=sha(result), file_size=len(source),
                     environment_factor=0.5, parsed_entities=entity_count,
                     summary=dict(Counter(r['reason'] for r in affected)),
