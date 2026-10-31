@@ -1,8 +1,0 @@
-.bundle-state/
-__pycache__/
-*.pyc
-*.exe
-*.package
-*.zip
-*.tmp
-bundle-image-*/

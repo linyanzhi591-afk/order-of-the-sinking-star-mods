@@ -12,11 +12,11 @@
 
 ## 说明 / Description
 
-这是六个独立 mod 的总导航和统一安装入口，适用于 **Windows x64 / Steam Build 26249670**。合集版本 **1.1.1-test**。下载一个 ZIP、完整解压后运行根目录 `install.cmd`，即可安装全部六项；包含独立水面网格显示，仍不包含尚未完成的通用网格显示 mod。
+这是五个独立 mod 的总导航和统一安装入口，适用于 **Windows x64 / Steam Build 26249670**。合集版本 **1.2.0-test**。下载一个 ZIP、完整解压后运行根目录 `install.cmd`，即可安装全部五项。新版不包含水面网格或通用网格显示 mod。
 
-This repository is the navigation hub and unified installer for six standalone mods targeting **Windows x64 / Steam Build 26249670**. Bundle version: **1.1.1-test**. Download one ZIP, extract it completely and run the root `install.cmd` to install all six. The standalone water grid is included; the unfinished general grid-display mod remains excluded.
+This repository is the navigation hub and unified installer for five standalone mods targeting **Windows x64 / Steam Build 26249670**. Bundle version: **1.2.0-test**. Download one ZIP, extract it completely and run the root `install.cmd` to install all five. Water-grid and general-grid mods are not included.
 
-发行 ZIP 将命名为 `order-of-the-sinking-star-mods-v1.1.1-test-build26249670.zip`；发布前可用随附的 SHA-256 清单核对。
+发行 ZIP 将命名为 `order-of-the-sinking-star-mods-v1.2.0-test-build26249670.zip`；发布前可用随附的 SHA-256 清单核对。
 
 | mod / Mod | 功能 / Function | 版本 / Version | 默认按键 / Default controls | 独立仓库 / Repository | 独立下载 / Download |
 | --- | --- | --- | --- | --- | --- |
@@ -25,7 +25,6 @@ This repository is the navigation hub and unified installer for six standalone m
 | 六职业彩色描边 / Character Highlight | 六种职业使用不同颜色，默认开启 / Class-colored outlines, enabled at startup | 0.2.1 | P | [仓库 / Repo](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-character-highlight) | [下载 / Release](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-character-highlight/releases/tag/v0.2.1) |
 | 粒子减量 / Particle Reduction | 减少所选装饰粒子，保留主体和独立光源 / Reduces selected decorative particles, preserves main effects and independent lights | 0.1.0-test | 自动生效，无开关键 / Automatic, no toggle | [仓库 / Repo](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-particle-reduction) | [下载 / Release](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-particle-reduction/releases/tag/v0.1.0-test) |
 | 世界暂停与单步 / World Step | 暂停世界或按 33 毫秒逻辑步推进 / Pauses the world or advances 33 ms logic steps | 0.1.3-test | N 暂停/恢复，M 单步/长按连步 / N pause/resume; M step/hold to repeat | [仓库 / Repo](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-world-step) | [下载 / Release](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-world-step/releases/tag/v0.1.3-test) |
-| 水面网格显示 / Water Surface Grid | 仅四类水面细网格，启动默认关闭 / Fine grid on four water families, off at startup | 0.1.0 | O；不提供 I 开关 / O; no I toggle | [仓库 / Repo](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-water-surface-grid) | [下载 / Release](https://github.com/linyanzhi591-afk/order-of-the-sinking-star-water-surface-grid/releases/tag/v0.1.0) |
 
 现有独立仓库继续保留。各 mod 的详细限制、源码及独立安装说明也保留在 `mods/<名称>/README.md` 中。
 
@@ -53,9 +52,9 @@ The installer searches Steam library locations and asks for a path if it cannot 
 .\install.cmd --game-dir "D:\SteamLibrary\steamapps\common\Order of the Sinking Star"
 ```
 
-安装顺序固定为 **奔跑切换 → 俯视镜头 → 彩色描边 → 粒子减量 → 世界暂停与单步 → 水面网格显示**。安装器先按此顺序在内存中生成最终文件并校验，再完整备份五个目标文件、暂存输出，最后统一写入。不是依次盲目运行六个独立安装脚本。
+安装顺序固定为 **奔跑切换 → 俯视镜头 → 彩色描边 → 粒子减量 → 世界暂停与单步**。安装器先按此顺序在内存中生成最终文件并校验，再完整备份五个目标文件、暂存输出，最后统一写入。不是依次盲目运行五个独立安装脚本。
 
-The fixed order is **Toggle Run → Local Area View → Character Highlight → Particle Reduction → World Step → Water Surface Grid**. The installer builds and verifies the final files in that order in memory, backs up all five target files, stages the outputs and then commits them as one recoverable operation.
+The fixed order is **Toggle Run → Local Area View → Character Highlight → Particle Reduction → World Step**. The installer builds and verifies the final files in that order in memory, backs up all five target files, stages the outputs and then commits them as one recoverable operation.
 
 首次完整安装大约需要 1.1 GB 备份与暂存空间，游戏盘另需约 0.4 GB 临时空间，并预留安全余量；同盘时要求合计可用空间。每次安装/卸载事务会保留自身恢复文件，不会自动清理历史备份。
 
@@ -63,9 +62,9 @@ A fresh full installation needs approximately 1.1 GB for backups/staging and ano
 
 ### 从旧合集升级 / Upgrading from the old bundle
 
-从旧合集升级时，先在旧合集目录退出游戏并完成 `recover.cmd`（若有中断）和 `uninstall.cmd`，再将 **1.1.1-test** 解压到新目录安装。不要覆盖旧目录或将旧 `.bundle-state` 混入新版；新版会拒绝旧收据。
+从 **1.1.1-test** 升级时，将 **1.2.0-test** 解压到新目录并在游戏退出后运行新版 `install.cmd`。新版会严格识别并移除旧水面主程序层与着色器层，同时保留另外五项。不要覆盖旧目录或将旧 `.bundle-state` 混入新版；若旧目录存在待恢复事务，必须先用旧版 `recover.cmd` 完成恢复。
 
-When upgrading from an older bundle, first exit the game and finish recovery (if needed) and uninstallation in the old bundle folder. Extract **1.1.1-test** into a new folder. Do not overwrite the old folder or mix its `.bundle-state` into this version; old receipts are rejected.
+To upgrade from **1.1.1-test**, extract **1.2.0-test** into a new folder and run its `install.cmd` while the game is closed. The new installer strictly recognizes and removes the old water executable/shader layers while retaining the other five mods. Do not overwrite the old folder or mix its `.bundle-state` into this version. Finish any pending old transaction with the old `recover.cmd` first.
 
 ## 使用 / Usage
 
@@ -74,8 +73,6 @@ When upgrading from an older bundle, first exit the game and finish recovery (if
 - **P**：切换六职业彩色描边。 / Toggle class-colored outlines.
 - **粒子减量**：安装后自动生效。 / Particle reduction applies automatically.
 - **N**：暂停/恢复世界。**M**：立即推进一次 33 毫秒逻辑更新，按住满 99 毫秒后开始约每 33 毫秒连步，每显示帧最多一步；松开保持暂停。 / N pauses/resumes; M immediately advances one 33 ms logic update, then repeats roughly every 33 ms after a 99 ms initial hold, at most once per display frame. Releasing keeps the world paused.
-
-- **O**：切换水面细网格，启动默认关闭，无本 mod 的 I 键控制。 / Toggle the water-surface grid, off at startup; this mod has no I toggle.
 
 `status.cmd` 查看状态，不修改游戏或创建备份。`check.cmd` 执行完整安装预检，不写游戏，但会创建并清理一个临时映像以检查 Windows x64 格式。自定义游戏路径时，所有入口均使用同样的 `--game-dir` 参数。
 
@@ -98,9 +95,9 @@ The bundle uses the listed default keys. Do not edit the vendored configurations
 
 Exit the game and run the root **`uninstall.cmd`**. The bundle validates the five current target files and its complete original snapshot, then restores the exact bytes from before bundle installation.
 
-**如果最初是原版，将移除全部六项；如果最初已单独安装部分或全部 mod，卸载会保留这些先前已有的 mod。** 已完整安装时重复运行 `install.cmd` 不重复写入、不替换首次基线。首次接管一个已完整安装五 mod 的目录，会保存该状态作为基线，因此卸载也会保留它们。重复卸载安全地不做任何游戏文件修改。
+**如果最初是原版，将移除全部五项；如果最初已单独安装部分或全部 mod，卸载会保留这些先前已有的 mod。** 已完整安装时重复运行 `install.cmd` 不重复写入、不替换首次基线。若从含水面层的 1.1.1-test 直接迁移，新版卸载会精确恢复迁移前状态，包括旧水面层。重复卸载安全地不做任何游戏文件修改。
 
-**A pristine starting installation returns to the original game. Mods already present before bundle installation are preserved.** Repeating `install.cmd` on an active complete installation does not rewrite files or replace the original baseline. Adopting an already complete six-mod installation records that state as its baseline, so uninstallation retains those pre-existing mods. Repeated uninstallation is a safe no-op.
+**A pristine starting installation returns to the original game. Mods already present before bundle installation are preserved.** Repeating `install.cmd` on an active complete installation does not rewrite files or replace the original baseline. A direct migration from 1.1.1-test records the old six-mod state as its baseline, so uninstallation restores that state, including the old water layer. Repeated uninstallation is a safe no-op.
 
 ### 失败或中断 / Failure or interruption
 
@@ -126,21 +123,21 @@ Move the hidden state directory together with the bundle. Without this installat
 
 ## 兼容性与已存在的 mod / Compatibility and existing mods
 
-- 只接受完整哈希验证通过的 Build 26249670。支持原版、当前奔跑/俯视/描边/粒子四项的全部 16 种子组合，以及已验证的世界单步和水面层组合。
+- 只接受完整哈希验证通过的 Build 26249670。支持原版、当前奔跑/俯视/描边/粒子四项的全部 16 种子组合、已验证的世界单步组合，以及 1.1.1-test 的完整旧水面层迁移输入。
 - 俯视须为 0.1.9-test；描边和世界单步须使用当前已发布版本及默认 P/N/M。更旧版本、部分损坏安装、未知资源修改和未完成的通用网格层会在写入前被拒绝。
 - 备份的是实际读到的完整初始状态。独立描边已安装时，安装器仅对严格匹配的当前资源执行可逆重建，并核对原版哈希和正向回放结果，无需附带原版资源。
 - 操作前和逐文件替换前均检查游戏进程，查询失败则停止。不会自动启动、关闭或控制游戏。操作期间请保持游戏关闭。
 
-- Only exact, verified Build 26249670 files are accepted. Supported inputs include the pristine game, all 16 subsets of the current toggle-run/camera/highlight/particle mods, plus the verified world-step and water-layer combinations.
+- Only exact, verified Build 26249670 files are accepted. Supported inputs include the pristine game, all 16 subsets of the current toggle-run/camera/highlight/particle mods, verified world-step combinations, and the complete legacy water-layer input from 1.1.1-test.
 - Camera must be 0.1.9-test; highlight and world-step must be the current released versions with default P/N/M keys. Older versions, inconsistent installations, unknown resource edits and unfinished general-grid layers are rejected before writes.
 - The complete actual starting state is backed up. Already installed highlight resources are reversed only when they strictly match the current known output, and both original hashes and forward replay are checked; no original assets need to be distributed.
 - The game process is checked before the operation and before each replacement. A failed process query stops writes. The installer never starts, stops or controls the game. Keep the game closed throughout the operation.
 
 ## 验证边界 / Validation limits
 
-Build 26249670 的水面网格已重新编译、签名并通过离线 DXIL 与隔离机器码验证；尚未进行新版实机画面验收。
+新版不生成、安装或分发水面网格。旧水面层移除仅接受 1.1.1-test 的完整已知哈希，主程序与着色器状态不一致时会在写入前拒绝。
 
-The Build 26249670 water grid was rebuilt, signed and passed offline DXIL and isolated machine-code checks; gameplay visuals on the new build have not yet been accepted.
+This release does not generate, install or distribute a water grid. Legacy removal accepts only the complete known 1.1.1-test hashes and rejects inconsistent executable/shader states before writing.
 
 合集及三个 mod 保留 `test` 标记。隔离安装与恢复测试不能代替全关卡实机验收；第一阶段以外、特殊交互、实体手柄、实际画面及性能收益均不能由这些测试保证。世界暂停不保证冻结音乐、界面动画、纯渲染效果或独立真实时间计时器；低帧率会降低连步速度。
 
