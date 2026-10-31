@@ -16,7 +16,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import bundle as b
 
 FIXTURES = None
-LEGACY_WATER_FIXTURES = None
 
 
 class BundleTests(unittest.TestCase):
@@ -34,10 +33,6 @@ class BundleTests(unittest.TestCase):
         cls.levels_final.write_bytes(output['levels'])
         # 大资源只保留原版一份内存，补丁版存于私有测试目录。
         cls.camera, cls.high, cls.particle, cls.world = b.load_logic()
-        cls.legacy_water = {
-            'exe': (LEGACY_WATER_FIXTURES/'water.exe').read_bytes(),
-            'shaders': (LEGACY_WATER_FIXTURES/'water.package').read_bytes(),
-        }
 
     @classmethod
     def tearDownClass(cls):
@@ -93,9 +88,11 @@ class BundleTests(unittest.TestCase):
             if particle:
                 current['levels'] = self.levels_final.read_bytes()
             output, states = b.build_plan(current)
-            self.assertEqual(list(states.values()), [run,camera,highlight,particle,False])
+            self.assertEqual(list(states.values()), [run,camera,highlight,particle,False,False])
             self.assertEqual({k:b.sha(v) for k,v in output.items()}, self.expected)
-        for exe in (self.pristine['exe'], b.toggle_run(self.pristine['exe']), self.world.split(self.final['exe'])[0]):
+        water = b.water_logic()
+        final_world = water.split_native(self.final['exe'],water.native_payload())
+        for exe in (self.pristine['exe'], b.toggle_run(self.pristine['exe']), self.world.split(final_world)[0]):
             is_high = exe.endswith(self.high.native_toggle.MARKER)
             for particles in (False, True):
                 current = dict(self.pristine, exe=self.world.apply(exe,(78,77)))
@@ -107,10 +104,6 @@ class BundleTests(unittest.TestCase):
                 self.assertTrue(states['world-step'])
                 self.assertEqual({k:b.sha(v) for k,v in output.items()}, self.expected)
         output, states = b.build_plan(dict(self.final,levels=self.levels_final.read_bytes()))
-        self.assertTrue(all(states.values()))
-        self.assertEqual({k:b.sha(v) for k,v in output.items()},self.expected)
-        legacy = dict(self.final, levels=self.levels_final.read_bytes(), **self.legacy_water)
-        output, states = b.build_plan(legacy)
         self.assertTrue(all(states.values()))
         self.assertEqual({k:b.sha(v) for k,v in output.items()},self.expected)
 
@@ -129,8 +122,7 @@ class BundleTests(unittest.TestCase):
             return original_replace(target, source, expected, desired, txid, key)
         with patch.object(b, 'replace_from', side_effect=inspect_backups):
             self.call('install')
-        changed = {key for key in b.TARGETS if self.original_hashes[key] != self.expected[key]}
-        self.assertEqual(set(observations), changed)
+        self.assertEqual(set(observations), set(b.TARGETS))
         self.assertEqual(b.current_hashes(self.game), self.expected)
         first = b.load_state(self.folder(),self.game.resolve())
         self.call('install')
@@ -188,7 +180,8 @@ class BundleTests(unittest.TestCase):
                        materials=self.final['materials'],outlines=self.final['outlines'])
         with self.assertRaises(b.BundleError):
             b.build_plan(current)
-        core, _ = self.world.split(self.final['exe'])
+        water = b.water_logic()
+        core, _ = self.world.split(water.split_native(self.final['exe'],water.native_payload()))
         with self.assertRaises(b.BundleError):
             b.build_plan(dict(self.pristine,exe=self.world.apply(core,(117,118))))
         with self.assertRaises(ValueError):
@@ -213,7 +206,6 @@ class BundleTests(unittest.TestCase):
         shutil.copytree(b.ROOT/'mods',broken/'mods')
         for name in ('bundle.json','bundle-files.json'):
             shutil.copy2(b.ROOT/name,broken/name)
-        shutil.copy2(b.ROOT/'legacy_water.py',broken/'legacy_water.py')
         payload = broken/'mods/world-step/payload.json'
         payload.write_bytes(payload.read_bytes()+b' ')
         with patch.object(b,'ROOT',broken):
@@ -334,7 +326,7 @@ class BundleTests(unittest.TestCase):
                 self.assertIn(('ACTION='+action).encode(),result.stdout)
                 self.assertIn(('PATH='+str(self.game)).encode(),result.stdout)
 
-    def test_16_legacy_water_migration_and_old_receipt(self):
+    def test_16_water_unknown_and_old_receipt(self):
         target = self.game/b.TARGETS['shaders']
         target.write_bytes(self.pristine['shaders']+b'unknown')
         before = b.current_hashes(self.game)
@@ -342,17 +334,12 @@ class BundleTests(unittest.TestCase):
             self.call('install')
         self.assertEqual(b.current_hashes(self.game),before)
         target.write_bytes(self.pristine['shaders'])
-        self.write_game(dict(exe=self.legacy_water['exe']))
+        self.write_game(dict(exe=self.final['exe']))
         before = b.current_hashes(self.game)
         with self.assertRaises(b.BundleError):
             self.call('install')
         self.assertEqual(b.current_hashes(self.game),before)
-        self.write_game({'exe':self.pristine['exe'], 'shaders':self.legacy_water['shaders']})
-        before = b.current_hashes(self.game)
-        with self.assertRaises(b.BundleError):
-            self.call('install')
-        self.assertEqual(b.current_hashes(self.game),before)
-        self.write_game({'shaders':self.pristine['shaders']})
+        self.write_game({'exe':self.pristine['exe']})
         folder=self.folder(); folder.mkdir(parents=True,exist_ok=True)
         fake=dict(schema=1,version='1.0.0-test',game=str(self.game.resolve()),active=True,
                   baseline_tx='0'*32,initial={k:v for k,v in self.original_hashes.items() if k!='shaders'},
@@ -367,13 +354,10 @@ class BundleTests(unittest.TestCase):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--fixtures',type=Path,required=True,help='合法原版游戏样本副本，只读 / Read-only pristine game fixture copy')
-    parser.add_argument('--legacy-water-fixtures',type=Path,required=True,
-                        help='v1.1.1-test 水面层只读迁移样本 / Read-only v1.1.1-test migration fixtures')
     parser.add_argument('--report',type=Path)
     parser.add_argument('--only',choices=unittest.defaultTestLoader.getTestCaseNames(BundleTests))
     args = parser.parse_args()
     FIXTURES = b.validate_game(args.fixtures)
-    LEGACY_WATER_FIXTURES = args.legacy_water_fixtures.resolve(strict=True)
     suite = unittest.TestSuite([BundleTests(args.only)]) if args.only else unittest.defaultTestLoader.loadTestsFromTestCase(BundleTests)
     result = unittest.TextTestRunner(verbosity=2).run(suite)
     if args.report:

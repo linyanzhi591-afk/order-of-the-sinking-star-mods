@@ -1,4 +1,4 @@
-"""五 mod 合集：先离线生成和完整备份，再以可恢复事务写入。"""
+"""六 mod 合集：先离线生成和完整备份，再以可恢复事务写入。"""
 import argparse
 import ctypes
 import hashlib
@@ -19,8 +19,8 @@ STATE_ROOT = ROOT / '.bundle-state'
 TARGETS = {'exe': 'sinking_star.exe', 'materials': 'data/materials.package',
            'outlines': 'data/mesh_outlines.mesh_outlines', 'levels': 'data/levels.package',
            'shaders': 'data/shaders.package'}
-ORDER = ['toggle-run', 'local-area-view', 'character-highlight', 'particle-reduction', 'world-step']
-VERSION = '1.2.0-test'
+ORDER = ['toggle-run', 'local-area-view', 'character-highlight', 'particle-reduction', 'world-step', 'water-surface-grid']
+VERSION = '1.1.1-test'
 MARGIN = 64 * 1024 * 1024
 
 
@@ -128,12 +128,11 @@ def dependency_check():
     lock = read_json(ROOT/'bundle-files.json')
     actual = {p.relative_to(ROOT).as_posix() for p in (ROOT/'mods').rglob('*') if p.is_file()
               and '.git' not in p.parts and '__pycache__' not in p.parts}
-    actual.add('legacy_water.py')
     if actual != set(lock):
         raise BundleError('mod 文件缺失或多出文件；请重新解压完整合集 / Mod file list differs; extract a clean complete bundle')
     for name, expected in lock.items():
         path = ROOT/name
-        if path.resolve().is_relative_to(ROOT.resolve()) and not path.is_symlink() and file_sha(path) == expected:
+        if path.resolve().is_relative_to((ROOT/'mods').resolve()) and not path.is_symlink() and file_sha(path) == expected:
             continue
         raise BundleError(f'发行文件校验失败 / Bundle file checksum failed: {name}')
 
@@ -155,8 +154,8 @@ def load_logic():
     return camera, highlight, particle, world
 
 
-def legacy_water_logic():
-    return module('_bundle_legacy_water', 'legacy_water.py')
+def water_logic():
+    return module('_bundle_water', 'mods/water-surface-grid/patch.py')
 
 
 def game_running():
@@ -220,14 +219,14 @@ def toggle_run(original):
 
 def build_plan(current):
     camera, high, particle, world = load_logic()
-    legacy_water = legacy_water_logic()
+    water = water_logic()
     core = current['exe']
-    water_enabled = core.endswith(legacy_water.MARKER)
-    shader_base, shaders_enabled = legacy_water.shader_base(current['shaders'])
+    water_enabled = core.endswith(water.MARKER)
+    shader_base, shaders_enabled = water.shader_base(current['shaders'])
     if water_enabled != shaders_enabled:
         raise BundleError('水面程序与着色器状态不一致，拒绝覆盖 / Inconsistent water executable/shaders')
     if water_enabled:
-        core = legacy_water.split_native(core)
+        core = water.split_native(core, water.native_payload())
     world_keys = None
     if core.endswith(world.MARKER):
         core, world_keys = world.split(core)
@@ -259,7 +258,7 @@ def build_plan(current):
     if levels_hash not in (particle_manifest['original_sha256'], particle_manifest['patched_sha256']):
         raise BundleError('未知关卡资源版本或修改 / Unknown level package version or modification')
     particle_enabled = levels_hash == particle_manifest['patched_sha256']
-    # 顺序固定：奔跑 → 镜头 → 描边 → 粒子 → 世界单步。
+    # 顺序固定：奔跑 → 镜头 → 描边 → 粒子 → 世界单步 → 水面网格。
     exe = toggle_run(base)
     exe = camera.transform(exe, True)
     output = {key: high.transform(TARGETS[key], originals[key]) for key in originals}
@@ -268,8 +267,9 @@ def build_plan(current):
     output['exe'] = world.apply(exe, (78, 77))
     if world.split(output['exe']) != (exe, (78, 77)):
         raise BundleError('世界单步输出不能精确撤销 / World-step output cannot be reversed exactly')
-    output['shaders'] = shader_base
-    return output, dict(zip(ORDER, [run_enabled, camera_version == 9, highlight_key is not None, particle_enabled, world_keys is not None]))
+    water_output, _ = water.plan(output['exe'], shader_base)
+    output.update(water_output)
+    return output, dict(zip(ORDER, [run_enabled, camera_version == 9, highlight_key is not None, particle_enabled, world_keys is not None, water_enabled]))
 
 
 def validate_image(data):

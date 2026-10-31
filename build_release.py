@@ -9,6 +9,7 @@ import bundle
 ROOT = Path(__file__).resolve().parent
 ROOT_FILES = ['.gitignore','.gitattributes','README.md','INTEGRATING_MODS.md','VALIDATION.md',
               'RELEASE_NOTES.md','bundle.py','bundle.json','bundle-files.json','build_release.py',
+              'build_water.py',
               'install.cmd','uninstall.cmd','recover.cmd','status.cmd','check.cmd','tests/test_bundle.py']
 
 
